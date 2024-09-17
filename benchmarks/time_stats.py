@@ -1,8 +1,9 @@
 import re
+import sys
 
 
 if __name__ == "__main__":
-    with open("log", "r") as f:
+    with open(f"{sys.argv[1]}", "r") as f:
         lines = f.readlines()
 
     load = 0

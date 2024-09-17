@@ -39,7 +39,7 @@ class InferAdapter:
         )
 
 
-    # @calculate_time(show=True, min_cost_ms=0)
+    @calculate_time(show=True, min_cost_ms=0)
     def load_lora_A(self, adapter, loc, prefetch=False):
         r = adapter.r
         h = adapter.network_config["hidden_size"]
@@ -64,7 +64,7 @@ class InferAdapter:
             adapter.layers[i].offload_from_gpu()
 
 
-    # @calculate_time(show=True, min_cost_ms=0)
+    @calculate_time(show=True, min_cost_ms=0)
     def load_lora_B(self, adapter, loc, prefetch=False):
         r = adapter.r
         h = adapter.network_config["hidden_size"]
@@ -88,10 +88,10 @@ class InferAdapter:
 
             adapter.layers[i].offload_from_gpu()
 
-    # @calculate_time(show=True, min_cost_ms=0)
+    @calculate_time(show=True, min_cost_ms=0)
     def load_adapters(self, adapters, prefetch=False):
-        # func_name = "realload" if not prefetch else "prefetch"
-        # mark_start(func_name)
+        func_name = "realload" if not prefetch else "prefetch"
+        mark_start(func_name)
         if len(adapters) == 0:
             print(f"load 0 adapters, {len(self.adapter_dirs)} in total")
             return
@@ -101,7 +101,7 @@ class InferAdapter:
             capacity = self.mem_manager.can_use_mem_size
             new_adapters = []
             tot_size = 0
-            # mark_start("load scan")
+            mark_start("load scan")
             for adapter in adapters:
                 self.prefetch_tag[adapter.lora_dir] = self.cur_tag
                 if adapter is not None and adapter.lora_dir not in self.idx_map:
@@ -109,18 +109,18 @@ class InferAdapter:
                         break
                     new_adapters.append(adapter)
                     tot_size += adapter.r * 4
-            # mark_end("load scan")
+            mark_end("load scan")
             print(f"prefetch {len(new_adapters)} adapters, "
                   f"{len(self.adapter_dirs) + len(new_adapters)} in total")
         else:
             new_adapters = []
             tot_size = 0
-            # mark_start("load scan")
+            mark_start("load scan")
             for adapter in adapters:
                 if adapter is not None and adapter.lora_dir not in self.idx_map:
                     new_adapters.append(adapter)
                     tot_size += adapter.r * 4
-            # mark_end("load scan")
+            mark_end("load scan")
             print(f"load {len(new_adapters)} adapters, {len(self.adapter_dirs) + len(new_adapters)} in total")
 
         new_loc = self.mem_manager.alloc(tot_size)
@@ -170,19 +170,19 @@ class InferAdapter:
                 self.load_lora_A(new_adapter, new_loc[cum_loc: cum_loc + new_adapter.r * 4], prefetch)
                 self.load_lora_B(new_adapter, new_loc[cum_loc: cum_loc + new_adapter.r * 4], prefetch)
 
-            #if prefetch:
+        #if prefetch:
         #    tic2 = time.time()
         #    torch.cuda.synchronize()
         #    tic3 = time.time()
         #    print("launch time", tic2 - tic1, flush=True)
         #    print("total time", tic3 - tic1, flush=True)
-        # mark_end(func_name)
+        mark_end(func_name)
         # print(f"current adapters on batch (loaded {len(new_adapters)})",
         #       len(self.adapter_dirs), self.adapter_dirs)
         # print(self.mem_manager.can_use_mem_size_suffix // 4 / 32)
     
 
-    # @calculate_time(show=True, min_cost_ms=0)
+    @calculate_time(show=True, min_cost_ms=0)
     def offload_adapters(self, reserve_adapter_dirs):
         if len(reserve_adapter_dirs) == len(self.adapter_dirs):
             print(f"offload 0 adapters, {len(self.adapter_dirs)} remains")
@@ -198,7 +198,7 @@ class InferAdapter:
             self.idx_map={}
             return
 
-        # mark_start("offload scan")
+        mark_start("offload scan")
         remove_ind = []
         left_ind = []
         new_adapter_dirs = []
@@ -214,35 +214,35 @@ class InferAdapter:
                 new_adapter_dirs.append(adapter_dir)
         if len(remove_ind) == 0:
             return
-        # mark_end("offload scan")
+        mark_end("offload scan")
         self.adapter_dirs = new_adapter_dirs
         tot_size = torch.sum(self.a_len[left_ind]).item()
         print(f"offload {len(remove_ind)} adapters, {len(left_ind)} remains")
 
-        # mark_start("offload cat")
+        mark_start("offload cat")
         remove_ind = torch.cat(remove_ind)
-        # mark_end("offload cat")
+        mark_end("offload cat")
         # release memory
-        # mark_start("offload free mem manager")
+        mark_start("offload free mem manager")
         self.mem_manager.free(remove_ind)
-        # mark_end("offload free mem manager")
+        mark_end("offload free mem manager")
         
         # reset indexing
-        # mark_start("offload torch.empty")
+        mark_start("offload torch.empty")
         new_a_len = torch.empty(len(left_ind), dtype=torch.long, device="cuda")
         new_a_start = torch.empty(len(left_ind), dtype=torch.long, device="cuda")
         new_a_scaling = torch.empty(len(left_ind), dtype=torch.float16, device="cuda")
         new_a_loc = torch.empty(tot_size, dtype=torch.long, device="cuda")
-        # mark_end("offload torch.empty")
+        mark_end("offload torch.empty")
 
         new_a_len[:] = self.a_len[left_ind]
         new_a_start[0] = 0
         new_a_start[1:] = torch.cumsum(new_a_len, dim=0)[:-1]
         new_a_scaling[:] = self.a_scaling[left_ind]
-        # mark_start("offload a_loc update")
+        mark_start("offload a_loc update")
         launch_var_len_copy_triton(self.a_start[left_ind], new_a_len,
                                    self.a_loc, new_a_start, new_a_loc)
-        # mark_end("offload a_loc update")
+        mark_end("offload a_loc update")
 
         self.a_start = new_a_start
         self.a_len = new_a_len
