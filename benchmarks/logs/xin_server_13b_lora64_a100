@@ -1,0 +1,2949 @@
+For some LLaMA-based models, initializing the fast tokenizer may take a long time. To eliminate the initialization time, consider using 'hf-internal-testing/llama-tokenizer' instead of the original tokenizer.
+llama-13b: 23.63 GB
+peak working mem for (bs=20, seqlen=512): 0.88 GB
+peak working mem for (bs=100, seqlen=512): 4.39 GB
+all adapters (101) estimated size: 19.73 GB
+avg adapter estimated size: 200.00 MB
+INFO:     127.0.0.1:38822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38832 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38846 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40284 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40294 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40308 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40324 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40330 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40332 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40340 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40350 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40366 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40378 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40394 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40402 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40406 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40412 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40416 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40428 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40438 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40448 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40454 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40466 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40580 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40588 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40590 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40596 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40600 - "POST /generate_stream HTTP/1.1" 200 OK
+cost load scan: 0.010251998901367188
+load 1 adapters, 1 in total
+Function load_lora_A took 9.414911270141602 ms to run.
+Function load_lora_B took 9.341001510620117 ms to run.
+cost realload: 23.459672927856445
+Function load_adapters took 23.487329483032227 ms to run.
+Avg tokens(prompt+generate) throughput:    5.831 tokens/s
+Avg prompt tokens throughput:              5.831 tokens/s
+Avg generate tokens throughput:            0.000 tokens/s
+cost load scan: 0.009298324584960938
+load 1 adapters, 2 in total
+Function load_lora_A took 9.325027465820312 ms to run.
+Function load_lora_B took 9.290456771850586 ms to run.
+cost realload: 19.16670799255371
+Function load_adapters took 19.191503524780273 ms to run.
+cost load scan: 0.010251998901367188
+load 2 adapters, 4 in total
+Function load_lora_A took 9.298086166381836 ms to run.
+Function load_lora_B took 9.296655654907227 ms to run.
+Function load_lora_A took 9.326934814453125 ms to run.
+Function load_lora_B took 9.255647659301758 ms to run.
+cost realload: 37.75382041931152
+Function load_adapters took 37.77790069580078 ms to run.
+current batch size: 4 token used ratio: 0.018692307692307692
+current batch size: 4 token used ratio: 0.02176923076923077
+cost load scan: 0.008821487426757812
+load 1 adapters, 5 in total
+Function load_lora_A took 9.314775466918945 ms to run.
+Function load_lora_B took 9.215116500854492 ms to run.
+cost realload: 18.98503303527832
+Function load_adapters took 19.00959014892578 ms to run.
+cost load scan: 0.00858306884765625
+load 0 adapters, 5 in total
+cost realload: 0.30231475830078125
+Function load_adapters took 0.32901763916015625 ms to run.
+cost load scan: 0.009298324584960938
+load 1 adapters, 6 in total
+Function load_lora_A took 9.285449981689453 ms to run.
+Function load_lora_B took 9.233236312866211 ms to run.
+cost realload: 18.947362899780273
+Function load_adapters took 18.973827362060547 ms to run.
+current batch size: 7 token used ratio: 0.034984615384615385
+cost load scan: 0.009298324584960938
+load 1 adapters, 7 in total
+Function load_lora_A took 9.312868118286133 ms to run.
+Function load_lora_B took 9.256601333618164 ms to run.
+cost realload: 18.986940383911133
+Function load_adapters took 19.01102066040039 ms to run.
+cost offload scan: 0.19025802612304688
+offload 1 adapters, 6 remains
+cost offload cat: 0.05316734313964844
+cost offload free mem manager: 0.06389617919921875
+cost offload torch.empty: 0.034809112548828125
+cost offload a_loc update: 12.979269027709961
+Function offload_adapters took 13.773918151855469 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 7 in total
+Function load_lora_A took 9.26351547241211 ms to run.
+Function load_lora_B took 9.252309799194336 ms to run.
+cost realload: 18.947362899780273
+Function load_adapters took 18.973588943481445 ms to run.
+cost load scan: 0.0095367431640625
+load 1 adapters, 8 in total
+Function load_lora_A took 9.246826171875 ms to run.
+Function load_lora_B took 9.270668029785156 ms to run.
+cost realload: 18.955230712890625
+Function load_adapters took 18.978357315063477 ms to run.
+current batch size: 9 token used ratio: 0.04804615384615385
+cost load scan: 0.011205673217773438
+load 5 adapters, 13 in total
+Function load_lora_A took 9.331464767456055 ms to run.
+Function load_lora_B took 9.274005889892578 ms to run.
+Function load_lora_A took 9.320735931396484 ms to run.
+Function load_lora_B took 9.263992309570312 ms to run.
+Function load_lora_A took 9.330034255981445 ms to run.
+Function load_lora_B took 9.27424430847168 ms to run.
+Function load_lora_A took 9.32002067565918 ms to run.
+Function load_lora_B took 9.291410446166992 ms to run.
+Function load_lora_A took 9.20414924621582 ms to run.
+Function load_lora_B took 9.232282638549805 ms to run.
+cost realload: 93.53876113891602
+Function load_adapters took 93.56164932250977 ms to run.
+cost load scan: 0.008344650268554688
+load 0 adapters, 13 in total
+cost realload: 0.2994537353515625
+Function load_adapters took 0.3247261047363281 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 14 in total
+Function load_lora_A took 9.324789047241211 ms to run.
+Function load_lora_B took 9.255170822143555 ms to run.
+cost realload: 19.000768661499023
+Function load_adapters took 19.022703170776367 ms to run.
+cost load scan: 0.008106231689453125
+load 1 adapters, 15 in total
+Function load_lora_A took 9.29713249206543 ms to run.
+Function load_lora_B took 9.267330169677734 ms to run.
+cost realload: 19.023895263671875
+Function load_adapters took 19.051551818847656 ms to run.
+current batch size: 17 token used ratio: 0.08933846153846153
+cost offload scan: 0.156402587890625
+offload 1 adapters, 14 remains
+cost offload cat: 0.04267692565917969
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.030994415283203125
+cost offload a_loc update: 0.11396408081054688
+Function offload_adapters took 0.6947517395019531 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 15 in total
+Function load_lora_A took 9.328603744506836 ms to run.
+Function load_lora_B took 9.266376495361328 ms to run.
+cost realload: 19.022226333618164
+Function load_adapters took 19.04606819152832 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 16 in total
+Function load_lora_A took 9.322881698608398 ms to run.
+Function load_lora_B took 9.299755096435547 ms to run.
+cost realload: 19.075393676757812
+Function load_adapters took 19.099712371826172 ms to run.
+current batch size: 18 token used ratio: 0.10238461538461538
+cost offload scan: 0.08988380432128906
+offload 1 adapters, 15 remains
+cost offload cat: 0.04076957702636719
+cost offload free mem manager: 0.054836273193359375
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11181831359863281
+Function offload_adapters took 0.6330013275146484 ms to run.
+cost offload scan: 0.0858306884765625
+offload 1 adapters, 14 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.022172927856445312
+cost offload a_loc update: 0.110626220703125
+Function offload_adapters took 0.5891323089599609 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 15 in total
+Function load_lora_A took 9.323596954345703 ms to run.
+Function load_lora_B took 9.276390075683594 ms to run.
+cost realload: 19.010066986083984
+Function load_adapters took 19.032001495361328 ms to run.
+cost offload scan: 0.14543533325195312
+offload 1 adapters, 14 remains
+cost offload cat: 0.0324249267578125
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10943412780761719
+Function offload_adapters took 0.6480216979980469 ms to run.
+Avg tokens(prompt+generate) throughput:  790.231 tokens/s
+Avg prompt tokens throughput:            510.663 tokens/s
+Avg generate tokens throughput:          279.568 tokens/s
+cost load scan: 0.008821487426757812
+load 1 adapters, 15 in total
+Function load_lora_A took 9.302377700805664 ms to run.
+Function load_lora_B took 9.256839752197266 ms to run.
+cost realload: 19.00625228881836
+Function load_adapters took 19.037723541259766 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 16 in total
+Function load_lora_A took 9.33980941772461 ms to run.
+Function load_lora_B took 9.254693984985352 ms to run.
+cost realload: 19.025325775146484
+Function load_adapters took 19.047260284423828 ms to run.
+current batch size: 19 token used ratio: 0.11298461538461538
+cost load scan: 0.010251998901367188
+load 3 adapters, 19 in total
+Function load_lora_A took 9.282588958740234 ms to run.
+Function load_lora_B took 9.296178817749023 ms to run.
+Function load_lora_A took 9.346246719360352 ms to run.
+Function load_lora_B took 10.413646697998047 ms to run.
+Function load_lora_A took 9.338140487670898 ms to run.
+Function load_lora_B took 9.27591323852539 ms to run.
+cost realload: 57.56735801696777
+Function load_adapters took 57.59143829345703 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 20 in total
+Function load_lora_A took 9.31549072265625 ms to run.
+Function load_lora_B took 9.247779846191406 ms to run.
+cost realload: 18.980741500854492
+INFO:     127.0.0.1:40602 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40612 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40618 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40630 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40642 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40654 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40664 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40678 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40680 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40684 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40694 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40704 - "POST /generate_stream HTTP/1.1" 200 OK
+Function load_adapters took 19.002914428710938 ms to run.
+offload 0 adapters, 20 remains
+Function offload_adapters took 0.013589859008789062 ms to run.
+cost offload scan: 0.12946128845214844
+offload 2 adapters, 18 remains
+cost offload cat: 0.033855438232421875
+cost offload free mem manager: 0.0457763671875
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11134147644042969
+Function offload_adapters took 0.6556510925292969 ms to run.
+cost offload scan: 0.09679794311523438
+offload 1 adapters, 17 remains
+cost offload cat: 0.03600120544433594
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11348724365234375
+Function offload_adapters took 0.6136894226074219 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 18 in total
+Function load_lora_A took 9.319782257080078 ms to run.
+Function load_lora_B took 9.298563003540039 ms to run.
+cost realload: 19.037485122680664
+Function load_adapters took 19.05965805053711 ms to run.
+cost offload scan: 0.09012222290039062
+offload 1 adapters, 17 remains
+cost offload cat: 0.03981590270996094
+cost offload free mem manager: 0.04649162292480469
+cost offload torch.empty: 0.024557113647460938
+cost offload a_loc update: 0.11491775512695312
+Function offload_adapters took 0.63323974609375 ms to run.
+cost offload scan: 0.09584426879882812
+offload 1 adapters, 16 remains
+cost offload cat: 0.036716461181640625
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11301040649414062
+Function offload_adapters took 0.6153583526611328 ms to run.
+offload 0 adapters, 16 remains
+Function offload_adapters took 0.0133514404296875 ms to run.
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 15 remains
+cost offload cat: 0.03218650817871094
+cost offload free mem manager: 0.04267692565917969
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10704994201660156
+Function offload_adapters took 0.5850791931152344 ms to run.
+current batch size: 16 token used ratio: 0.0973076923076923
+cost load scan: 0.008821487426757812
+load 1 adapters, 16 in total
+Function load_lora_A took 9.262800216674805 ms to run.
+Function load_lora_B took 9.223222732543945 ms to run.
+cost realload: 18.92685890197754
+Function load_adapters took 18.949270248413086 ms to run.
+offload 0 adapters, 16 remains
+Function offload_adapters took 0.013113021850585938 ms to run.
+cost load scan: 0.01049041748046875
+load 3 adapters, 19 in total
+Function load_lora_A took 9.298324584960938 ms to run.
+Function load_lora_B took 9.250640869140625 ms to run.
+Function load_lora_A took 9.311914443969727 ms to run.
+Function load_lora_B took 9.245872497558594 ms to run.
+Function load_lora_A took 9.259462356567383 ms to run.
+Function load_lora_B took 9.233951568603516 ms to run.
+cost realload: 56.19406700134277
+Function load_adapters took 56.224822998046875 ms to run.
+cost load scan: 0.017404556274414062
+load 2 adapters, 21 in total
+Function load_lora_A took 9.306192398071289 ms to run.
+Function load_lora_B took 9.230613708496094 ms to run.
+Function load_lora_A took 9.338617324829102 ms to run.
+Function load_lora_B took 9.276866912841797 ms to run.
+cost realload: 37.651777267456055
+Function load_adapters took 37.673234939575195 ms to run.
+cost offload scan: 0.09131431579589844
+offload 1 adapters, 20 remains
+cost offload cat: 0.03814697265625
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11229515075683594
+Function offload_adapters took 0.6172657012939453 ms to run.
+cost offload scan: 0.09083747863769531
+offload 1 adapters, 19 remains
+cost offload cat: 0.03647804260253906
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.022411346435546875
+cost offload a_loc update: 0.11181831359863281
+Function offload_adapters took 0.6024837493896484 ms to run.
+cost offload scan: 0.08845329284667969
+offload 1 adapters, 18 remains
+cost offload cat: 0.03218650817871094
+cost offload free mem manager: 0.04291534423828125
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11014938354492188
+Function offload_adapters took 0.5884170532226562 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 19 in total
+Function load_lora_A took 9.309053421020508 ms to run.
+Function load_lora_B took 9.269952774047852 ms to run.
+cost realload: 18.993854522705078
+Function load_adapters took 19.016265869140625 ms to run.
+current batch size: 19 token used ratio: 0.10746153846153846
+cost load scan: 0.0095367431640625
+load 1 adapters, 20 in total
+Function load_lora_A took 9.343862533569336 ms to run.
+Function load_lora_B took 9.238958358764648 ms to run.
+cost realload: 19.002437591552734
+Function load_adapters took 19.025564193725586 ms to run.
+cost offload scan: 0.087738037109375
+offload 1 adapters, 19 remains
+cost offload cat: 0.03647804260253906
+cost offload free mem manager: 0.045299530029296875
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11086463928222656
+Function offload_adapters took 0.6039142608642578 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 20 in total
+Function load_lora_A took 9.33527946472168 ms to run.
+Function load_lora_B took 9.217262268066406 ms to run.
+cost realload: 18.970727920532227
+Function load_adapters took 18.99886131286621 ms to run.
+cost offload scan: 0.09012222290039062
+offload 1 adapters, 19 remains
+cost offload cat: 0.034809112548828125
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10919570922851562
+Function offload_adapters took 0.6053447723388672 ms to run.
+cost offload scan: 0.09918212890625
+offload 1 adapters, 18 remains
+cost offload cat: 0.03314018249511719
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10919570922851562
+Function offload_adapters took 0.6022453308105469 ms to run.
+cost offload scan: 0.09512901306152344
+offload 1 adapters, 17 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10824203491210938
+Function offload_adapters took 0.5984306335449219 ms to run.
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 16 remains
+cost offload cat: 0.03886222839355469
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.10800361633300781
+Function offload_adapters took 0.5943775177001953 ms to run.
+current batch size: 16 token used ratio: 0.09070769230769231
+cost offload scan: 0.09012222290039062
+offload 1 adapters, 15 remains
+cost offload cat: 0.04220008850097656
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11181831359863281
+Function offload_adapters took 0.6213188171386719 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 16 in total
+Function load_lora_A took 9.302616119384766 ms to run.
+Function load_lora_B took 9.231090545654297 ms to run.
+cost realload: 18.97883415222168
+Function load_adapters took 19.002199172973633 ms to run.
+cost offload scan: 0.08893013000488281
+offload 1 adapters, 15 remains
+cost offload cat: 0.03528594970703125
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.118255615234375
+Function offload_adapters took 0.6051063537597656 ms to run.
+cost load scan: 0.009298324584960938
+load 1 adapters, 16 in total
+Function load_lora_A took 9.29713249206543 ms to run.
+Function load_lora_B took 9.292840957641602 ms to run.
+cost realload: 19.005298614501953
+Function load_adapters took 19.026994705200195 ms to run.
+cost offload scan: 0.0896453857421875
+offload 1 adapters, 15 remains
+cost offload cat: 0.03361701965332031
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11014938354492188
+INFO:     127.0.0.1:40720 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40734 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40742 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40754 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40764 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44066 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44076 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44090 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44098 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44102 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44108 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44110 - "POST /generate_stream HTTP/1.1" 200 OK
+Function offload_adapters took 0.5896091461181641 ms to run.
+current batch size: 15 token used ratio: 0.08316923076923077
+cost load scan: 0.00858306884765625
+load 1 adapters, 16 in total
+Function load_lora_A took 9.242534637451172 ms to run.
+Function load_lora_B took 9.285211563110352 ms to run.
+cost realload: 18.984556198120117
+Function load_adapters took 19.007205963134766 ms to run.
+cost offload scan: 0.08869171142578125
+offload 1 adapters, 15 remains
+cost offload cat: 0.0324249267578125
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11539459228515625
+Function offload_adapters took 0.5941390991210938 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 16 in total
+Function load_lora_A took 9.282112121582031 ms to run.
+Function load_lora_B took 9.267807006835938 ms to run.
+cost realload: 19.002676010131836
+Function load_adapters took 19.025564193725586 ms to run.
+cost offload scan: 0.08916854858398438
+offload 1 adapters, 15 remains
+cost offload cat: 0.03361701965332031
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.5922317504882812 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 16 in total
+Function load_lora_A took 9.264469146728516 ms to run.
+Function load_lora_B took 9.207725524902344 ms to run.
+cost realload: 18.892288208007812
+Function load_adapters took 18.915891647338867 ms to run.
+cost offload scan: 0.08726119995117188
+offload 1 adapters, 15 remains
+cost offload cat: 0.03695487976074219
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10848045349121094
+Function offload_adapters took 0.5974769592285156 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 16 in total
+Function load_lora_A took 9.311676025390625 ms to run.
+Function load_lora_B took 9.28354263305664 ms to run.
+cost realload: 19.016504287719727
+Function load_adapters took 19.039392471313477 ms to run.
+cost offload scan: 0.08893013000488281
+offload 1 adapters, 15 remains
+cost offload cat: 0.03457069396972656
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10895729064941406
+Function offload_adapters took 0.5917549133300781 ms to run.
+current batch size: 15 token used ratio: 0.08170769230769231
+cost load scan: 0.008821487426757812
+load 1 adapters, 16 in total
+Function load_lora_A took 9.320259094238281 ms to run.
+Function load_lora_B took 9.309053421020508 ms to run.
+cost realload: 19.059181213378906
+Function load_adapters took 19.08278465270996 ms to run.
+Avg tokens(prompt+generate) throughput: 1078.816 tokens/s
+Avg prompt tokens throughput:            624.850 tokens/s
+Avg generate tokens throughput:          453.966 tokens/s
+cost offload scan: 0.08702278137207031
+offload 1 adapters, 15 remains
+cost offload cat: 0.035762786865234375
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.11014938354492188
+Function offload_adapters took 0.5946159362792969 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 16 in total
+Function load_lora_A took 9.331226348876953 ms to run.
+Function load_lora_B took 9.281635284423828 ms to run.
+cost realload: 19.023418426513672
+Function load_adapters took 19.048213958740234 ms to run.
+cost offload scan: 0.09036064147949219
+offload 1 adapters, 15 remains
+cost offload cat: 0.035762786865234375
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10967254638671875
+Function offload_adapters took 0.5977153778076172 ms to run.
+cost offload scan: 0.09107589721679688
+offload 1 adapters, 14 remains
+cost offload cat: 0.03361701965332031
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10728836059570312
+Function offload_adapters took 0.5991458892822266 ms to run.
+cost load scan: 0.0095367431640625
+load 1 adapters, 15 in total
+Function load_lora_A took 9.294271469116211 ms to run.
+Function load_lora_B took 9.296417236328125 ms to run.
+cost realload: 19.027233123779297
+Function load_adapters took 19.05035972595215 ms to run.
+cost offload scan: 0.08726119995117188
+offload 1 adapters, 14 remains
+cost offload cat: 0.03361701965332031
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10943412780761719
+Function offload_adapters took 0.5853176116943359 ms to run.
+current batch size: 14 token used ratio: 0.07535384615384616
+cost offload scan: 0.08678436279296875
+offload 1 adapters, 13 remains
+cost offload cat: 0.03409385681152344
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11467933654785156
+Function offload_adapters took 0.5955696105957031 ms to run.
+cost offload scan: 0.0858306884765625
+offload 1 adapters, 12 remains
+cost offload cat: 0.031948089599609375
+cost offload free mem manager: 0.051975250244140625
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10824203491210938
+Function offload_adapters took 0.5917549133300781 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 13 in total
+Function load_lora_A took 9.340047836303711 ms to run.
+Function load_lora_B took 9.261608123779297 ms to run.
+cost realload: 19.03080940246582
+Function load_adapters took 19.054889678955078 ms to run.
+cost offload scan: 0.08893013000488281
+offload 1 adapters, 12 remains
+cost offload cat: 0.03528594970703125
+cost offload free mem manager: 0.04601478576660156
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10752677917480469
+Function offload_adapters took 0.6012916564941406 ms to run.
+cost offload scan: 0.08845329284667969
+offload 1 adapters, 11 remains
+cost offload cat: 0.034809112548828125
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10824203491210938
+Function offload_adapters took 0.5898475646972656 ms to run.
+cost offload scan: 0.08511543273925781
+offload 1 adapters, 10 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11777877807617188
+Function offload_adapters took 0.5893707275390625 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 11 in total
+Function load_lora_A took 9.303092956542969 ms to run.
+Function load_lora_B took 9.30023193359375 ms to run.
+cost realload: 19.013166427612305
+Function load_adapters took 19.034147262573242 ms to run.
+current batch size: 11 token used ratio: 0.06053846153846154
+cost offload scan: 0.08845329284667969
+offload 1 adapters, 10 remains
+cost offload cat: 0.04100799560546875
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10919570922851562
+Function offload_adapters took 0.5984306335449219 ms to run.
+current batch size: 10 token used ratio: 0.061292307692307695
+cost load scan: 0.008821487426757812
+load 1 adapters, 11 in total
+Function load_lora_A took 9.343624114990234 ms to run.
+Function load_lora_B took 9.255647659301758 ms to run.
+cost realload: 19.086837768554688
+Function load_adapters took 19.123077392578125 ms to run.
+cost offload scan: 0.08916854858398438
+offload 1 adapters, 10 remains
+cost offload cat: 0.04076957702636719
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11038780212402344
+Function offload_adapters took 0.6046295166015625 ms to run.
+cost load scan: 0.009298324584960938
+load 1 adapters, 11 in total
+Function load_lora_A took 9.287834167480469 ms to run.
+Function load_lora_B took 9.273529052734375 ms to run.
+cost realload: 18.964767456054688
+Function load_adapters took 18.985986709594727 ms to run.
+cost load scan: INFO:     127.0.0.1:44124 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44140 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44146 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44156 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44160 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44174 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44186 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44192 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:44206 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50308 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50312 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50314 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50322 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50324 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50340 - "POST /generate_stream HTTP/1.1" 200 OK
+0.008821487426757812
+load 1 adapters, 12 in total
+Function load_lora_A took 9.320497512817383 ms to run.
+Function load_lora_B took 9.320735931396484 ms to run.
+cost realload: 19.097566604614258
+Function load_adapters took 19.120216369628906 ms to run.
+cost load scan: 0.014781951904296875
+load 1 adapters, 13 in total
+Function load_lora_A took 9.363651275634766 ms to run.
+Function load_lora_B took 9.284019470214844 ms to run.
+cost realload: 19.214391708374023
+Function load_adapters took 19.24443244934082 ms to run.
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 12 remains
+cost offload cat: 0.03552436828613281
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11038780212402344
+Function offload_adapters took 0.5981922149658203 ms to run.
+current batch size: 12 token used ratio: 0.07153846153846154
+cost load scan: 0.009059906005859375
+load 1 adapters, 13 in total
+Function load_lora_A took 9.294986724853516 ms to run.
+Function load_lora_B took 9.28497314453125 ms to run.
+cost realload: 18.998146057128906
+Function load_adapters took 19.01984214782715 ms to run.
+cost offload scan: 0.08893013000488281
+offload 1 adapters, 12 remains
+cost offload cat: 0.03457069396972656
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.1087188720703125
+Function offload_adapters took 0.5903244018554688 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 13 in total
+Function load_lora_A took 9.312152862548828 ms to run.
+Function load_lora_B took 9.256839752197266 ms to run.
+cost realload: 18.982410430908203
+Function load_adapters took 19.005537033081055 ms to run.
+cost offload scan: 0.08654594421386719
+offload 1 adapters, 12 remains
+cost offload cat: 0.03719329833984375
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.030755996704101562
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.6022453308105469 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 13 in total
+Function load_lora_A took 9.325742721557617 ms to run.
+Function load_lora_B took 9.293556213378906 ms to run.
+cost realload: 19.043684005737305
+Function load_adapters took 19.06752586364746 ms to run.
+cost offload scan: 0.09059906005859375
+offload 1 adapters, 12 remains
+cost offload cat: 0.03337860107421875
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.029087066650390625
+cost offload a_loc update: 0.10895729064941406
+Function offload_adapters took 0.6015300750732422 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 13 in total
+Function load_lora_A took 9.296655654907227 ms to run.
+Function load_lora_B took 9.266376495361328 ms to run.
+cost realload: 18.977642059326172
+Function load_adapters took 19.00005340576172 ms to run.
+current batch size: 13 token used ratio: 0.07523076923076923
+cost offload scan: 0.08940696716308594
+offload 1 adapters, 12 remains
+cost offload cat: 0.03600120544433594
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11110305786132812
+Function offload_adapters took 0.5950927734375 ms to run.
+cost load scan: 0.008344650268554688
+load 1 adapters, 13 in total
+Function load_lora_A took 9.29713249206543 ms to run.
+Function load_lora_B took 9.27734375 ms to run.
+cost realload: 19.005537033081055
+Function load_adapters took 19.028902053833008 ms to run.
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 12 remains
+cost offload cat: 0.03409385681152344
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11038780212402344
+Function offload_adapters took 0.5862712860107422 ms to run.
+cost load scan: 0.012159347534179688
+load 1 adapters, 13 in total
+Function load_lora_A took 9.280204772949219 ms to run.
+Function load_lora_B took 9.241342544555664 ms to run.
+cost realload: 19.062519073486328
+Function load_adapters took 19.0887451171875 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 14 in total
+Function load_lora_A took 9.296178817749023 ms to run.
+Function load_lora_B took 9.273767471313477 ms to run.
+cost realload: 18.982648849487305
+Function load_adapters took 19.00458335876465 ms to run.
+cost offload scan: 0.08916854858398438
+offload 1 adapters, 13 remains
+cost offload cat: 0.036716461181640625
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11968612670898438
+Function offload_adapters took 0.6093978881835938 ms to run.
+cost offload scan: 0.09059906005859375
+offload 1 adapters, 12 remains
+cost offload cat: 0.03147125244140625
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10967254638671875
+Function offload_adapters took 0.5955696105957031 ms to run.
+current batch size: 12 token used ratio: 0.06743076923076922
+Avg tokens(prompt+generate) throughput:  763.934 tokens/s
+Avg prompt tokens throughput:            410.459 tokens/s
+Avg generate tokens throughput:          353.475 tokens/s
+cost load scan: 0.008344650268554688
+load 1 adapters, 13 in total
+Function load_lora_A took 9.312629699707031 ms to run.
+Function load_lora_B took 9.275197982788086 ms to run.
+cost realload: 19.005775451660156
+Function load_adapters took 19.0274715423584 ms to run.
+cost load scan: 0.0095367431640625
+load 1 adapters, 14 in total
+Function load_lora_A took 9.258747100830078 ms to run.
+Function load_lora_B took 9.297847747802734 ms to run.
+cost realload: 18.999338150024414
+Function load_adapters took 19.022464752197266 ms to run.
+cost load scan: 0.009298324584960938
+load 1 adapters, 15 in total
+Function load_lora_A took 9.349822998046875 ms to run.
+Function load_lora_B took 9.253263473510742 ms to run.
+cost realload: 19.024133682250977
+Function load_adapters took 19.046306610107422 ms to run.
+cost offload scan: 0.08940696716308594
+offload 1 adapters, 14 remains
+cost offload cat: 0.037670135498046875
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11110305786132812
+Function offload_adapters took 0.5993843078613281 ms to run.
+cost offload scan: 0.087738037109375
+offload 1 adapters, 13 remains
+cost offload cat: 0.032901763916015625
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.1087188720703125
+Function offload_adapters took 0.5934238433837891 ms to run.
+current batch size: 13 token used ratio: 0.07267692307692308
+cost offload scan: 0.08702278137207031
+offload 1 adapters, 12 remains
+cost offload cat: 0.03504753112792969
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.022172927856445312
+cost offload a_loc update: 0.10633468627929688
+Function offload_adapters took 0.5817413330078125 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 13 in total
+Function load_lora_A took 9.300947189331055 ms to run.
+Function load_lora_B took 9.296655654907227 ms to run.
+cost realload: 19.002199172973633
+Function load_adapters took 19.023895263671875 ms to run.
+cost offload scan: 0.08702278137207031
+offload 1 adapters, 12 remains
+cost offload cat: 0.03504753112792969
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.10800361633300781
+Function offload_adapters took 0.5881786346435547 ms to run.
+cost offload scan: 0.08511543273925781
+offload 1 adapters, 11 remains
+cost offload cat: 0.031948089599609375
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10704994201660156
+Function offload_adapters took 0.5779266357421875 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 12 in total
+Function load_lora_A took 9.306192398071289 ms to run.
+Function load_lora_B took 9.313344955444336 ms to run.
+cost realload: 19.084453582763672
+INFO:     127.0.0.1:50356 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50370 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50382 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50396 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50408 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50416 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50420 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50430 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50434 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50442 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50452 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50466 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50478 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50482 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50484 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50496 - "POST /generate_stream HTTP/1.1" 200 OK
+Function load_adapters took 19.110441207885742 ms to run.
+cost load scan: 0.009298324584960938
+load 2 adapters, 14 in total
+Function load_lora_A took 9.354114532470703 ms to run.
+Function load_lora_B took 9.265661239624023 ms to run.
+Function load_lora_A took 9.308815002441406 ms to run.
+Function load_lora_B took 9.229898452758789 ms to run.
+cost realload: 37.65416145324707
+Function load_adapters took 37.676095962524414 ms to run.
+cost offload scan: 0.08630752563476562
+offload 1 adapters, 13 remains
+cost offload cat: 0.03790855407714844
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.11205673217773438
+Function offload_adapters took 0.6029605865478516 ms to run.
+current batch size: 13 token used ratio: 0.06836923076923077
+cost load scan: 0.009298324584960938
+load 2 adapters, 15 in total
+Function load_lora_A took 9.264469146728516 ms to run.
+Function load_lora_B took 9.226083755493164 ms to run.
+Function load_lora_A took 9.305715560913086 ms to run.
+Function load_lora_B took 9.302139282226562 ms to run.
+cost realload: 37.58049011230469
+Function load_adapters took 37.602901458740234 ms to run.
+cost load scan: 0.009298324584960938
+load 1 adapters, 16 in total
+Function load_lora_A took 9.286165237426758 ms to run.
+Function load_lora_B took 9.285926818847656 ms to run.
+cost realload: 18.997907638549805
+Function load_adapters took 19.021034240722656 ms to run.
+cost offload scan: 0.10275840759277344
+offload 1 adapters, 15 remains
+cost offload cat: 0.038623809814453125
+cost offload free mem manager: 0.05459785461425781
+cost offload torch.empty: 0.030040740966796875
+cost offload a_loc update: 0.12540817260742188
+Function offload_adapters took 0.6873607635498047 ms to run.
+cost load scan: 0.008106231689453125
+load 0 adapters, 15 in total
+cost realload: 0.3008842468261719
+Function load_adapters took 0.32520294189453125 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 16 in total
+Function load_lora_A took 9.274721145629883 ms to run.
+Function load_lora_B took 9.237289428710938 ms to run.
+cost realload: 18.93019676208496
+Function load_adapters took 18.95284652709961 ms to run.
+current batch size: 18 token used ratio: 0.0960923076923077
+cost load scan: 0.012159347534179688
+load 1 adapters, 17 in total
+Function load_lora_A took 9.326934814453125 ms to run.
+Function load_lora_B took 9.274721145629883 ms to run.
+cost realload: 19.159317016601562
+Function load_adapters took 19.186973571777344 ms to run.
+offload 0 adapters, 17 remains
+Function offload_adapters took 0.0133514404296875 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 18 in total
+Function load_lora_A took 9.32621955871582 ms to run.
+Function load_lora_B took 9.255647659301758 ms to run.
+cost realload: 18.992185592651367
+Function load_adapters took 19.014596939086914 ms to run.
+cost offload scan: 0.11777877807617188
+offload 1 adapters, 17 remains
+cost offload cat: 0.044345855712890625
+cost offload free mem manager: 0.05793571472167969
+cost offload torch.empty: 0.03361701965332031
+cost offload a_loc update: 0.152587890625
+Function offload_adapters took 0.7987022399902344 ms to run.
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 16 remains
+cost offload cat: 0.03218650817871094
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.11610984802246094
+Function offload_adapters took 0.5903244018554688 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 17 in total
+Function load_lora_A took 9.295463562011719 ms to run.
+Function load_lora_B took 9.248018264770508 ms to run.
+cost realload: 18.955469131469727
+Function load_adapters took 18.978118896484375 ms to run.
+cost offload scan: 0.08845329284667969
+offload 1 adapters, 16 remains
+cost offload cat: 0.031232833862304688
+cost offload free mem manager: 0.045299530029296875
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10776519775390625
+Function offload_adapters took 0.5962848663330078 ms to run.
+cost load scan: 0.008821487426757812
+load 0 adapters, 16 in total
+cost realload: 0.308990478515625
+Function load_adapters took 0.3349781036376953 ms to run.
+cost offload scan: 0.09369850158691406
+offload 1 adapters, 15 remains
+cost offload cat: 0.033855438232421875
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.1068115234375
+Function offload_adapters took 0.5900859832763672 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 16 in total
+Function load_lora_A took 9.275197982788086 ms to run.
+Function load_lora_B took 9.303569793701172 ms to run.
+cost realload: 18.99409294128418
+Function load_adapters took 19.01698112487793 ms to run.
+current batch size: 19 token used ratio: 0.09795384615384616
+cost load scan: 0.009298324584960938
+load 1 adapters, 17 in total
+Function load_lora_A took 9.300470352172852 ms to run.
+Function load_lora_B took 9.245634078979492 ms to run.
+cost realload: 18.97597312927246
+Function load_adapters took 18.999099731445312 ms to run.
+cost offload scan: 0.08940696716308594
+offload 1 adapters, 16 remains
+cost offload cat: 0.03361701965332031
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.022411346435546875
+cost offload a_loc update: 0.11157989501953125
+Function offload_adapters took 0.5946159362792969 ms to run.
+cost offload scan: 0.09298324584960938
+offload 1 adapters, 15 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11181831359863281
+Function offload_adapters took 0.5929470062255859 ms to run.
+cost load scan: 0.012874603271484375
+load 1 adapters, 16 in total
+Function load_lora_A took 9.375810623168945 ms to run.
+Function load_lora_B took 9.283304214477539 ms to run.
+cost realload: 19.56009864807129
+Function load_adapters took 19.58942413330078 ms to run.
+cost offload scan: 0.08869171142578125
+offload 1 adapters, 15 remains
+cost offload cat: 0.03528594970703125
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11014938354492188
+Function offload_adapters took 0.5998611450195312 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 16 in total
+Function load_lora_A took 9.348154067993164 ms to run.
+Function load_lora_B took 9.218215942382812 ms to run.
+cost realload: 18.976211547851562
+Function load_adapters took 18.998146057128906 ms to run.
+current batch size: 19 token used ratio: 0.10161538461538462
+offload 0 adapters, 16 remains
+Function offload_adapters took 0.012636184692382812 ms to run.
+cost offload scan: 0.08726119995117188
+offload 1 adapters, 15 remains
+cost offload cat: 0.037670135498046875
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11181831359863281
+Function offload_adapters took 0.6084442138671875 ms to run.
+cost offload scan: 0.08916854858398438
+offload 1 adapters, 14 remains
+cost offload cat: 0.03218650817871094
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11682510375976562
+Function offload_adapters took 0.5934238433837891 ms to run.
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 13 remains
+cost offload cat: 0.03695487976074219
+cost offload free mem manager: 0.045299530029296875
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.6115436553955078 ms to run.
+Avg tokens(prompt+generate) throughput:  975.955 tokens/s
+Avg prompt tokens throughput:            547.122 tokens/s
+Avg generate tokens throughput:          428.833 tokens/s
+current batch size: 15 token used ratio: 0.09138461538461538
+offload 0 adapters, 13 remains
+Function offload_adapters took 0.0133514404296875 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 14 in total
+Function load_lora_A took 9.298086166381836 ms to run.
+INFO:     127.0.0.1:52186 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52202 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52210 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52214 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52222 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52224 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52238 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52254 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52256 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52258 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52270 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52284 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52296 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52302 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52312 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52322 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52336 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52350 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52362 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52366 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52378 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52384 - "POST /generate_stream HTTP/1.1" 200 OK
+Function load_lora_B took 9.294509887695312 ms to run.
+cost realload: 19.040584564208984
+Function load_adapters took 19.063472747802734 ms to run.
+cost offload scan: 0.11348724365234375
+offload 1 adapters, 13 remains
+cost offload cat: 0.040531158447265625
+cost offload free mem manager: 0.04744529724121094
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.1499652862548828
+Function offload_adapters took 0.7119178771972656 ms to run.
+cost offload scan: 0.09202957153320312
+offload 1 adapters, 12 remains
+cost offload cat: 0.03409385681152344
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11157989501953125
+Function offload_adapters took 0.5967617034912109 ms to run.
+cost load scan: 0.01239776611328125
+load 1 adapters, 13 in total
+Function load_lora_A took 9.295463562011719 ms to run.
+Function load_lora_B took 9.250164031982422 ms to run.
+cost realload: 19.114017486572266
+Function load_adapters took 19.144058227539062 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 14 in total
+Function load_lora_A took 9.296655654907227 ms to run.
+Function load_lora_B took 9.253740310668945 ms to run.
+cost realload: 18.985986709594727
+Function load_adapters took 19.008398056030273 ms to run.
+cost offload scan: 0.0858306884765625
+offload 1 adapters, 13 remains
+cost offload cat: 0.03504753112792969
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11372566223144531
+Function offload_adapters took 0.5991458892822266 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 14 in total
+Function load_lora_A took 9.328365325927734 ms to run.
+Function load_lora_B took 9.282112121582031 ms to run.
+cost realload: 19.03557777404785
+Function load_adapters took 19.0582275390625 ms to run.
+current batch size: 15 token used ratio: 0.08970769230769231
+cost load scan: 0.008106231689453125
+load 0 adapters, 14 in total
+cost realload: 0.3082752227783203
+Function load_adapters took 0.3342628479003906 ms to run.
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 13 remains
+cost offload cat: 0.03743171691894531
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11110305786132812
+Function offload_adapters took 0.6005764007568359 ms to run.
+cost load scan: 0.0095367431640625
+load 2 adapters, 15 in total
+Function load_lora_A took 9.32455062866211 ms to run.
+Function load_lora_B took 9.251832962036133 ms to run.
+Function load_lora_A took 9.330987930297852 ms to run.
+Function load_lora_B took 9.274959564208984 ms to run.
+cost realload: 37.665367126464844
+Function load_adapters took 37.68777847290039 ms to run.
+cost offload scan: 0.08821487426757812
+offload 1 adapters, 14 remains
+cost offload cat: 0.0362396240234375
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.0286102294921875
+cost offload a_loc update: 0.10895729064941406
+Function offload_adapters took 0.6015300750732422 ms to run.
+cost offload scan: 0.09489059448242188
+offload 1 adapters, 13 remains
+cost offload cat: 0.03337860107421875
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.022411346435546875
+cost offload a_loc update: 0.1125335693359375
+Function offload_adapters took 0.5960464477539062 ms to run.
+cost offload scan: 0.087738037109375
+offload 1 adapters, 12 remains
+cost offload cat: 0.038623809814453125
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.02384185791015625
+cost offload a_loc update: 0.10800361633300781
+Function offload_adapters took 0.5922317504882812 ms to run.
+cost load scan: 0.0095367431640625
+load 1 adapters, 13 in total
+Function load_lora_A took 9.287118911743164 ms to run.
+Function load_lora_B took 9.263753890991211 ms to run.
+cost realload: 18.96953582763672
+Function load_adapters took 18.99123191833496 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 14 in total
+Function load_lora_A took 9.297609329223633 ms to run.
+Function load_lora_B took 9.287834167480469 ms to run.
+cost realload: 19.00935173034668
+Function load_adapters took 19.031763076782227 ms to run.
+current batch size: 17 token used ratio: 0.09426153846153847
+cost offload scan: 0.095367431640625
+offload 1 adapters, 13 remains
+cost offload cat: 0.04124641418457031
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11348724365234375
+Function offload_adapters took 0.6248950958251953 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 14 in total
+Function load_lora_A took 9.265899658203125 ms to run.
+Function load_lora_B took 9.23299789428711 ms to run.
+cost realload: 18.90873908996582
+Function load_adapters took 18.930673599243164 ms to run.
+cost load scan: 0.009775161743164062
+load 1 adapters, 15 in total
+Function load_lora_A took 9.328365325927734 ms to run.
+Function load_lora_B took 9.28354263305664 ms to run.
+cost realload: 19.045591354370117
+Function load_adapters took 19.06895637512207 ms to run.
+cost offload scan: 0.11968612670898438
+offload 1 adapters, 14 remains
+cost offload cat: 0.049114227294921875
+cost offload free mem manager: 0.0629425048828125
+cost offload torch.empty: 0.03147125244140625
+cost offload a_loc update: 0.152587890625
+Function offload_adapters took 0.8094310760498047 ms to run.
+cost load scan: 0.009298324584960938
+load 2 adapters, 16 in total
+Function load_lora_A took 9.300947189331055 ms to run.
+Function load_lora_B took 9.265661239624023 ms to run.
+Function load_lora_A took 9.332895278930664 ms to run.
+Function load_lora_B took 9.27591323852539 ms to run.
+cost realload: 37.718772888183594
+Function load_adapters took 37.74452209472656 ms to run.
+offload 0 adapters, 16 remains
+Function offload_adapters took 0.0133514404296875 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 17 in total
+Function load_lora_A took 9.26971435546875 ms to run.
+Function load_lora_B took 9.293556213378906 ms to run.
+cost realload: 18.97287368774414
+Function load_adapters took 18.995285034179688 ms to run.
+current batch size: 19 token used ratio: 0.09964615384615384
+cost load scan: 0.00858306884765625
+load 1 adapters, 18 in total
+Function load_lora_A took 9.277582168579102 ms to run.
+Function load_lora_B took 9.205341339111328 ms to run.
+cost realload: 18.895626068115234
+Function load_adapters took 18.91803741455078 ms to run.
+cost offload scan: 0.08869171142578125
+offload 1 adapters, 17 remains
+cost offload cat: 0.03838539123535156
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10895729064941406
+Function offload_adapters took 0.6070137023925781 ms to run.
+cost load scan: 0.0095367431640625
+load 2 adapters, 19 in total
+Function load_lora_A took 9.23013687133789 ms to run.
+Function load_lora_B took 9.238481521606445 ms to run.
+Function load_lora_A took 9.223461151123047 ms to run.
+Function load_lora_B took 9.222984313964844 ms to run.
+cost realload: 37.395477294921875
+Function load_adapters took 37.418365478515625 ms to run.
+offload 0 adapters, 19 remains
+Function offload_adapters took 0.012874603271484375 ms to run.
+cost load scan: 0.00858306884765625
+load 0 adapters, 19 in total
+cost realload: 0.29850006103515625
+Function load_adapters took 0.324249267578125 ms to run.
+cost offload scan: 0.13208389282226562
+offload 1 adapters, 18 remains
+cost offload cat: 0.03886222839355469
+cost offload free mem manager: 0.04744529724121094
+cost offload torch.empty: 0.02384185791015625
+cost offload a_loc update: 0.11229515075683594
+Function offload_adapters took 0.6971359252929688 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 19 in total
+Function load_lora_A took 9.356975555419922 ms to run.
+Function load_lora_B took 9.219169616699219 ms to run.
+cost realload: 18.993139266967773
+Function load_adapters took 19.016027450561523 ms to run.
+current batch size: 22 token used ratio: 0.114
+cost offload scan: 0.11014938354492188
+offload 1 adapters, 18 remains
+cost offload cat: INFO:     127.0.0.1:52396 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52404 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47720 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47736 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47742 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47748 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47760 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47772 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47778 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47790 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47802 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47810 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47812 - "POST /generate_stream HTTP/1.1" 200 OK
+0.04267692565917969
+cost offload free mem manager: 0.05626678466796875
+cost offload torch.empty: 0.03647804260253906
+cost offload a_loc update: 0.15783309936523438
+Function offload_adapters took 0.8344650268554688 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 19 in total
+Function load_lora_A took 9.341239929199219 ms to run.
+Function load_lora_B took 9.275674819946289 ms to run.
+cost realload: 19.061565399169922
+Function load_adapters took 19.08707618713379 ms to run.
+offload 0 adapters, 19 remains
+Function offload_adapters took 0.0133514404296875 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 20 in total
+Function load_lora_A took 9.311437606811523 ms to run.
+Function load_lora_B took 9.253263473510742 ms to run.
+cost realload: 18.986940383911133
+Function load_adapters took 19.010305404663086 ms to run.
+cost offload scan: 0.08916854858398438
+offload 1 adapters, 19 remains
+cost offload cat: 0.03409385681152344
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.1125335693359375
+Function offload_adapters took 0.6062984466552734 ms to run.
+offload 0 adapters, 19 remains
+Function offload_adapters took 0.01430511474609375 ms to run.
+offload 0 adapters, 19 remains
+Function offload_adapters took 0.012636184692382812 ms to run.
+current batch size: 19 token used ratio: 0.10244615384615384
+Avg tokens(prompt+generate) throughput: 1056.493 tokens/s
+Avg prompt tokens throughput:            582.583 tokens/s
+Avg generate tokens throughput:          473.910 tokens/s
+cost offload scan: 0.09799003601074219
+offload 1 adapters, 18 remains
+cost offload cat: 0.04482269287109375
+cost offload free mem manager: 0.045299530029296875
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.1125335693359375
+Function offload_adapters took 0.6344318389892578 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 19 in total
+Function load_lora_A took 9.308815002441406 ms to run.
+Function load_lora_B took 9.248495101928711 ms to run.
+cost realload: 18.990755081176758
+Function load_adapters took 19.023895263671875 ms to run.
+cost offload scan: 0.09250640869140625
+offload 1 adapters, 18 remains
+cost offload cat: 0.04220008850097656
+cost offload free mem manager: 0.048160552978515625
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11658668518066406
+Function offload_adapters took 0.6220340728759766 ms to run.
+cost offload scan: 0.09369850158691406
+offload 1 adapters, 17 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.045299530029296875
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11324882507324219
+Function offload_adapters took 0.6136894226074219 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 18 in total
+Function load_lora_A took 9.325981140136719 ms to run.
+Function load_lora_B took 9.268522262573242 ms to run.
+cost realload: 19.0126895904541
+Function load_adapters took 19.034385681152344 ms to run.
+cost offload scan: 0.08869171142578125
+offload 1 adapters, 17 remains
+cost offload cat: 0.034809112548828125
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11038780212402344
+Function offload_adapters took 0.591278076171875 ms to run.
+current batch size: 17 token used ratio: 0.09626153846153847
+cost offload scan: 0.1347064971923828
+offload 2 adapters, 15 remains
+cost offload cat: 0.02765655517578125
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.12063980102539062
+Function offload_adapters took 0.6439685821533203 ms to run.
+cost offload scan: 0.08678436279296875
+offload 1 adapters, 14 remains
+cost offload cat: 0.039577484130859375
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11110305786132812
+Function offload_adapters took 0.6074905395507812 ms to run.
+cost load scan: 0.01049041748046875
+load 1 adapters, 15 in total
+Function load_lora_A took 9.331703186035156 ms to run.
+Function load_lora_B took 9.274721145629883 ms to run.
+cost realload: 19.05989646911621
+Function load_adapters took 19.08564567565918 ms to run.
+cost offload scan: 0.09202957153320312
+offload 1 adapters, 14 remains
+cost offload cat: 0.04029273986816406
+cost offload free mem manager: 0.05817413330078125
+cost offload torch.empty: 0.033855438232421875
+cost offload a_loc update: 0.1506805419921875
+Function offload_adapters took 0.7767677307128906 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 15 in total
+Function load_lora_A took 9.253263473510742 ms to run.
+Function load_lora_B took 9.223699569702148 ms to run.
+cost realload: 18.89801025390625
+Function load_adapters took 18.921375274658203 ms to run.
+cost offload scan: 0.08916854858398438
+offload 1 adapters, 14 remains
+cost offload cat: 0.03647804260253906
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10752677917480469
+Function offload_adapters took 0.5950927734375 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 15 in total
+Function load_lora_A took 9.349584579467773 ms to run.
+Function load_lora_B took 9.291887283325195 ms to run.
+cost realload: 19.033432006835938
+Function load_adapters took 19.054174423217773 ms to run.
+current batch size: 15 token used ratio: 0.08538461538461538
+cost load scan: 0.012874603271484375
+load 1 adapters, 16 in total
+Function load_lora_A took 9.356975555419922 ms to run.
+Function load_lora_B took 9.268522262573242 ms to run.
+cost realload: 19.136428833007812
+Function load_adapters took 19.16360855102539 ms to run.
+cost offload scan: 0.09679794311523438
+offload 1 adapters, 15 remains
+cost offload cat: 0.03933906555175781
+cost offload free mem manager: 0.049591064453125
+cost offload torch.empty: 0.024318695068359375
+cost offload a_loc update: 0.11897087097167969
+Function offload_adapters took 0.6458759307861328 ms to run.
+cost load scan: 0.011444091796875
+load 1 adapters, 16 in total
+Function load_lora_A took 9.285926818847656 ms to run.
+Function load_lora_B took 9.243488311767578 ms to run.
+cost realload: 18.933773040771484
+Function load_adapters took 18.954753875732422 ms to run.
+cost offload scan: 0.09012222290039062
+offload 1 adapters, 15 remains
+cost offload cat: 0.03790855407714844
+cost offload free mem manager: 0.04696846008300781
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11277198791503906
+Function offload_adapters took 0.6241798400878906 ms to run.
+cost load scan: 0.013113021850585938
+load 2 adapters, 17 in total
+Function load_lora_A took 9.321212768554688 ms to run.
+Function load_lora_B took 9.268045425415039 ms to run.
+Function load_lora_A took 9.295225143432617 ms to run.
+Function load_lora_B took 9.302854537963867 ms to run.
+cost realload: 37.74857521057129
+Function load_adapters took 37.77885437011719 ms to run.
+cost offload scan: 0.08869171142578125
+offload 1 adapters, 16 remains
+cost offload cat: 0.03910064697265625
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11897087097167969
+Function offload_adapters took 0.6113052368164062 ms to run.
+cost offload scan: 0.08869171142578125
+offload 1 adapters, 15 remains
+cost offload cat: 0.0324249267578125
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11968612670898438
+Function offload_adapters took 0.6055831909179688 ms to run.
+cost load scan: 0.00762939453125
+load 0 adapters, 15 in total
+cost realload: 0.3025531768798828
+Function load_adapters took 0.32782554626464844 ms to run.
+current batch size: 17 token used ratio: 0.08721538461538461
+cost load scan: 0.013113021850585938
+load 1 adapters, 16 in total
+Function load_lora_A took 9.289264678955078 ms to run.
+Function load_lora_B took 9.231328964233398 ms to run.
+cost realload: 18.97573471069336
+Function load_adapters took 18.99886131286621 ms to run.
+INFO:     127.0.0.1:47818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47828 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47836 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47840 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47844 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47860 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47864 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47876 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47892 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47902 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47914 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47916 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46976 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46984 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46988 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46994 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47002 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47018 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47030 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47044 - "POST /generate_stream HTTP/1.1" 200 OK
+cost offload scan: 0.09369850158691406
+offload 1 adapters, 15 remains
+cost offload cat: 0.04267692565917969
+cost offload free mem manager: 0.045299530029296875
+cost offload torch.empty: 0.02384185791015625
+cost offload a_loc update: 0.11205673217773438
+Function offload_adapters took 0.6718635559082031 ms to run.
+cost load scan: 0.015735626220703125
+load 1 adapters, 16 in total
+Function load_lora_A took 9.297847747802734 ms to run.
+Function load_lora_B took 9.330511093139648 ms to run.
+cost realload: 19.11187171936035
+Function load_adapters took 19.142866134643555 ms to run.
+current batch size: 18 token used ratio: 0.10215384615384615
+cost offload scan: 0.09584426879882812
+offload 1 adapters, 15 remains
+cost offload cat: 0.036716461181640625
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.02384185791015625
+cost offload a_loc update: 0.11205673217773438
+Function offload_adapters took 0.6096363067626953 ms to run.
+cost load scan: 0.010728836059570312
+load 1 adapters, 16 in total
+Function load_lora_A took 9.325027465820312 ms to run.
+Function load_lora_B took 9.21010971069336 ms to run.
+cost realload: 18.96071434020996
+Function load_adapters took 18.98336410522461 ms to run.
+cost offload scan: 0.08678436279296875
+offload 1 adapters, 15 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.04267692565917969
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.11515617370605469
+Function offload_adapters took 0.591278076171875 ms to run.
+cost offload scan: 0.09441375732421875
+offload 1 adapters, 14 remains
+cost offload cat: 0.03170967102050781
+cost offload free mem manager: 0.04267692565917969
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11396408081054688
+Function offload_adapters took 0.6480216979980469 ms to run.
+cost offload scan: 0.2014636993408203
+offload 2 adapters, 12 remains
+cost offload cat: 0.04482269287109375
+cost offload free mem manager: 0.07462501525878906
+cost offload torch.empty: 0.03814697265625
+cost offload a_loc update: 0.11444091796875
+Function offload_adapters took 0.8873939514160156 ms to run.
+cost offload scan: 0.08678436279296875
+offload 1 adapters, 11 remains
+cost offload cat: 0.031948089599609375
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10657310485839844
+Function offload_adapters took 0.5819797515869141 ms to run.
+cost load scan: 0.01621246337890625
+load 0 adapters, 11 in total
+cost realload: 0.3151893615722656
+Function load_adapters took 0.3390312194824219 ms to run.
+offload 0 adapters, 11 remains
+Function offload_adapters took 0.013113021850585938 ms to run.
+cost load scan: 0.00762939453125
+load 0 adapters, 11 in total
+cost realload: 0.3027915954589844
+Function load_adapters took 0.32782554626464844 ms to run.
+cost load scan: 0.014543533325195312
+load 2 adapters, 13 in total
+Function load_lora_A took 9.305477142333984 ms to run.
+Function load_lora_B took 9.268999099731445 ms to run.
+Function load_lora_A took 9.301185607910156 ms to run.
+Function load_lora_B took 9.273052215576172 ms to run.
+cost realload: 37.65368461608887
+Function load_adapters took 37.674903869628906 ms to run.
+current batch size: 16 token used ratio: 0.07838461538461539
+cost offload scan: 0.08845329284667969
+offload 1 adapters, 12 remains
+cost offload cat: 0.03337860107421875
+cost offload free mem manager: 0.05054473876953125
+cost offload torch.empty: 0.02384185791015625
+cost offload a_loc update: 0.11038780212402344
+Function offload_adapters took 0.5996227264404297 ms to run.
+cost load scan: 0.007867813110351562
+load 0 adapters, 12 in total
+cost realload: 0.3018379211425781
+Function load_adapters took 0.32711029052734375 ms to run.
+cost load scan: 0.0152587890625
+load 1 adapters, 13 in total
+Function load_lora_A took 9.330272674560547 ms to run.
+Function load_lora_B took 9.254932403564453 ms to run.
+cost realload: 19.002914428710938
+Function load_adapters took 19.025325775146484 ms to run.
+cost offload scan: 0.08869171142578125
+offload 1 adapters, 12 remains
+cost offload cat: 0.03719329833984375
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11205673217773438
+Function offload_adapters took 0.6082057952880859 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 13 in total
+Function load_lora_A took 9.350776672363281 ms to run.
+Function load_lora_B took 9.307146072387695 ms to run.
+cost realload: 19.07515525817871
+Function load_adapters took 19.09780502319336 ms to run.
+cost offload scan: 0.08940696716308594
+offload 1 adapters, 12 remains
+cost offload cat: 0.035762786865234375
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11229515075683594
+Function offload_adapters took 0.6017684936523438 ms to run.
+current batch size: 16 token used ratio: 0.0808923076923077
+cost load scan: 0.01621246337890625
+load 1 adapters, 13 in total
+Function load_lora_A took 9.321928024291992 ms to run.
+Function load_lora_B took 9.258031845092773 ms to run.
+cost realload: 19.054651260375977
+Function load_adapters took 19.081830978393555 ms to run.
+cost offload scan: 0.08821487426757812
+offload 1 adapters, 12 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.5893707275390625 ms to run.
+Avg tokens(prompt+generate) throughput:  961.617 tokens/s
+Avg prompt tokens throughput:            531.648 tokens/s
+Avg generate tokens throughput:          429.968 tokens/s
+cost load scan: 0.009298324584960938
+load 1 adapters, 13 in total
+Function load_lora_A took 9.279489517211914 ms to run.
+Function load_lora_B took 9.219646453857422 ms to run.
+cost realload: 18.920183181762695
+Function load_adapters took 18.942594528198242 ms to run.
+cost load scan: 0.010967254638671875
+load 2 adapters, 15 in total
+Function load_lora_A took 9.331464767456055 ms to run.
+Function load_lora_B took 9.299039840698242 ms to run.
+Function load_lora_A took 9.307622909545898 ms to run.
+Function load_lora_B took 9.23609733581543 ms to run.
+cost realload: 37.659645080566406
+Function load_adapters took 37.68181800842285 ms to run.
+cost load scan: 0.008106231689453125
+load 0 adapters, 15 in total
+cost realload: 0.3058910369873047
+Function load_adapters took 0.33092498779296875 ms to run.
+offload 0 adapters, 15 remains
+Function offload_adapters took 0.0133514404296875 ms to run.
+cost load scan: 0.015735626220703125
+load 1 adapters, 16 in total
+Function load_lora_A took 9.38105583190918 ms to run.
+Function load_lora_B took 9.275436401367188 ms to run.
+cost realload: 19.1042423248291
+Function load_adapters took 19.12689208984375 ms to run.
+current batch size: 21 token used ratio: 0.10318461538461539
+cost load scan: 0.013828277587890625
+load 1 adapters, 17 in total
+Function load_lora_A took 9.323835372924805 ms to run.
+Function load_lora_B took 9.22536849975586 ms to run.
+cost realload: 18.976449966430664
+Function load_adapters took 18.999814987182617 ms to run.
+cost load scan: 0.008106231689453125
+load 1 adapters, 18 in total
+Function load_lora_A took 9.293317794799805 ms to run.
+Function load_lora_B took 9.260892868041992 ms to run.
+cost realload: 18.98956298828125
+Function load_adapters took 19.01984214782715 ms to run.
+offload 0 adapters, 18 remains
+Function offload_adapters took 0.013589859008789062 ms to run.
+offload 0 adapters, 18 remains
+Function offload_adapters took 0.0133514404296875 ms to run.
+cost load scan: 0.008344650268554688
+load 0 adapters, 18 in total
+cost realload: 0.2951622009277344
+Function load_adapters took 0.3204345703125 ms to run.
+cost load scan: 0.01621246337890625
+load 1 adapters, 19 in total
+Function load_lora_A took 9.290456771850586 ms to run.
+Function load_lora_B took 9.279012680053711 ms to run.
+cost realload: 19.00458335876465
+Function load_adapters took 19.0274715423584 ms to run.
+current batch size: 23 token used ratio: 0.12381538461538462
+INFO:     127.0.0.1:47050 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47054 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47064 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47070 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47082 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47092 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47102 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47106 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47116 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47132 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47140 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47156 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47160 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47170 - "POST /generate_stream HTTP/1.1" 200 OK
+offload 0 adapters, 19 remains
+Function offload_adapters took 0.03361701965332031 ms to run.
+cost load scan: 0.01430511474609375
+load 1 adapters, 20 in total
+Function load_lora_A took 9.298324584960938 ms to run.
+Function load_lora_B took 9.256362915039062 ms to run.
+cost realload: 18.985271453857422
+Function load_adapters took 19.00935173034668 ms to run.
+offload 0 adapters, 20 remains
+Function offload_adapters took 0.012874603271484375 ms to run.
+cost offload scan: 0.09226799011230469
+offload 1 adapters, 19 remains
+cost offload cat: 0.03552436828613281
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.10919570922851562
+Function offload_adapters took 0.6000995635986328 ms to run.
+cost load scan: 0.013589859008789062
+load 1 adapters, 20 in total
+Function load_lora_A took 9.337186813354492 ms to run.
+Function load_lora_B took 9.29570198059082 ms to run.
+cost realload: 19.074440002441406
+Function load_adapters took 19.098520278930664 ms to run.
+cost load scan: 0.012874603271484375
+load 1 adapters, 21 in total
+Function load_lora_A took 9.317636489868164 ms to run.
+Function load_lora_B took 9.284734725952148 ms to run.
+cost realload: 19.033432006835938
+Function load_adapters took 19.057750701904297 ms to run.
+cost offload scan: 0.091552734375
+offload 1 adapters, 20 remains
+cost offload cat: 0.03695487976074219
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.1201629638671875
+Function offload_adapters took 0.6258487701416016 ms to run.
+cost offload scan: 0.09560585021972656
+offload 1 adapters, 19 remains
+cost offload cat: 0.03457069396972656
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.1125335693359375
+Function offload_adapters took 0.6186962127685547 ms to run.
+cost load scan: 0.01239776611328125
+load 2 adapters, 21 in total
+Function load_lora_A took 9.325027465820312 ms to run.
+Function load_lora_B took 9.264945983886719 ms to run.
+Function load_lora_A took 9.267807006835938 ms to run.
+Function load_lora_B took 9.207725524902344 ms to run.
+cost realload: 37.55044937133789
+Function load_adapters took 37.57166862487793 ms to run.
+current batch size: 23 token used ratio: 0.12323076923076923
+cost offload scan: 0.09322166442871094
+offload 1 adapters, 20 remains
+cost offload cat: 0.04506111145019531
+cost offload free mem manager: 0.045299530029296875
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11301040649414062
+Function offload_adapters took 0.6330013275146484 ms to run.
+cost offload scan: 0.11134147644042969
+offload 1 adapters, 19 remains
+cost offload cat: 0.03981590270996094
+cost offload free mem manager: 0.05555152893066406
+cost offload torch.empty: 0.034809112548828125
+cost offload a_loc update: 0.17547607421875
+Function offload_adapters took 0.8270740509033203 ms to run.
+cost load scan: 0.014781951904296875
+load 1 adapters, 20 in total
+Function load_lora_A took 9.333610534667969 ms to run.
+Function load_lora_B took 9.236335754394531 ms to run.
+cost realload: 19.00792121887207
+Function load_adapters took 19.031763076782227 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 21 in total
+Function load_lora_A took 9.274721145629883 ms to run.
+Function load_lora_B took 9.237527847290039 ms to run.
+cost realload: 18.94354820251465
+Function load_adapters took 18.967628479003906 ms to run.
+cost offload scan: 0.1277923583984375
+offload 2 adapters, 19 remains
+cost offload cat: 0.029802322387695312
+cost offload free mem manager: 0.05078315734863281
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11420249938964844
+Function offload_adapters took 0.6434917449951172 ms to run.
+cost load scan: 0.012636184692382812
+load 1 adapters, 20 in total
+Function load_lora_A took 9.305953979492188 ms to run.
+Function load_lora_B took 9.227752685546875 ms to run.
+cost realload: 18.97716522216797
+Function load_adapters took 19.00029182434082 ms to run.
+current batch size: 22 token used ratio: 0.12387692307692308
+cost offload scan: 0.09226799011230469
+offload 1 adapters, 19 remains
+cost offload cat: 0.03910064697265625
+cost offload free mem manager: 0.049114227294921875
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.1220703125
+Function offload_adapters took 0.6265640258789062 ms to run.
+cost load scan: 0.016927719116210938
+load 2 adapters, 21 in total
+Function load_lora_A took 9.316444396972656 ms to run.
+Function load_lora_B took 9.255170822143555 ms to run.
+Function load_lora_A took 9.375333786010742 ms to run.
+Function load_lora_B took 9.305000305175781 ms to run.
+cost realload: 37.92881965637207
+Function load_adapters took 37.953853607177734 ms to run.
+cost offload scan: 0.09059906005859375
+offload 1 adapters, 20 remains
+cost offload cat: 0.03719329833984375
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11467933654785156
+Function offload_adapters took 0.606536865234375 ms to run.
+cost offload scan: 0.08845329284667969
+offload 1 adapters, 19 remains
+cost offload cat: 0.03552436828613281
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11181831359863281
+Function offload_adapters took 0.6084442138671875 ms to run.
+cost offload scan: 0.09822845458984375
+offload 1 adapters, 18 remains
+cost offload cat: 0.03337860107421875
+cost offload free mem manager: 0.04839897155761719
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11086463928222656
+Function offload_adapters took 0.6215572357177734 ms to run.
+cost offload scan: 0.09918212890625
+offload 1 adapters, 17 remains
+cost offload cat: 0.03790855407714844
+cost offload free mem manager: 0.047206878662109375
+cost offload torch.empty: 0.0247955322265625
+cost offload a_loc update: 0.11467933654785156
+Function offload_adapters took 0.6492137908935547 ms to run.
+cost load scan: 0.01049041748046875
+load 1 adapters, 18 in total
+Function load_lora_A took 9.270668029785156 ms to run.
+Function load_lora_B took 9.255170822143555 ms to run.
+cost realload: 18.98050308227539
+Function load_adapters took 19.00458335876465 ms to run.
+cost offload scan: 0.09131431579589844
+offload 1 adapters, 17 remains
+cost offload cat: 0.03361701965332031
+cost offload free mem manager: 0.04291534423828125
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10848045349121094
+Function offload_adapters took 0.5917549133300781 ms to run.
+cost offload scan: 0.1308917999267578
+offload 2 adapters, 15 remains
+cost offload cat: 0.029325485229492188
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11229515075683594
+Function offload_adapters took 0.6344318389892578 ms to run.
+cost load scan: 0.017642974853515625
+load 3 adapters, 18 in total
+Function load_lora_A took 9.310007095336914 ms to run.
+Function load_lora_B took 9.286165237426758 ms to run.
+Function load_lora_A took 9.309053421020508 ms to run.
+Function load_lora_B took 9.240388870239258 ms to run.
+Function load_lora_A took 9.309053421020508 ms to run.
+Function load_lora_B took 9.337425231933594 ms to run.
+cost realload: 56.362152099609375
+Function load_adapters took 56.38313293457031 ms to run.
+current batch size: 19 token used ratio: 0.10358461538461539
+cost load scan: 0.015974044799804688
+load 1 adapters, 19 in total
+Function load_lora_A took 9.381532669067383 ms to run.
+Function load_lora_B took 9.265422821044922 ms to run.
+cost realload: 19.08278465270996
+Function load_adapters took 19.106149673461914 ms to run.
+cost offload scan: 0.08630752563476562
+offload 1 adapters, 18 remains
+cost offload cat: 0.03552436828613281
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.11563301086425781
+Function offload_adapters took 0.5967617034912109 ms to run.
+cost offload scan: 0.09846687316894531
+offload 1 adapters, 17 remains
+cost offload cat: INFO:     127.0.0.1:47178 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47188 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52904 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52912 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52916 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52926 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52930 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52942 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52950 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52956 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52958 - "POST /generate_stream HTTP/1.1" 200 OK
+0.03266334533691406
+cost offload free mem manager: 0.049591064453125
+cost offload torch.empty: 0.02384185791015625
+cost offload a_loc update: 0.10943412780761719
+Function offload_adapters took 0.6537437438964844 ms to run.
+offload 0 adapters, 17 remains
+Function offload_adapters took 0.0133514404296875 ms to run.
+cost load scan: 0.010251998901367188
+load 1 adapters, 18 in total
+Function load_lora_A took 9.347677230834961 ms to run.
+Function load_lora_B took 9.217977523803711 ms to run.
+cost realload: 18.98503303527832
+Function load_adapters took 19.007444381713867 ms to run.
+Avg tokens(prompt+generate) throughput: 1159.657 tokens/s
+Avg prompt tokens throughput:            637.687 tokens/s
+Avg generate tokens throughput:          521.970 tokens/s
+cost offload scan: 0.09632110595703125
+offload 1 adapters, 17 remains
+cost offload cat: 0.03790855407714844
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11277198791503906
+Function offload_adapters took 0.6289482116699219 ms to run.
+cost offload scan: 0.08726119995117188
+offload 1 adapters, 16 remains
+cost offload cat: 0.033855438232421875
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.022172927856445312
+cost offload a_loc update: 0.10943412780761719
+Function offload_adapters took 0.5979537963867188 ms to run.
+cost load scan: 0.012636184692382812
+load 1 adapters, 17 in total
+Function load_lora_A took 9.295463562011719 ms to run.
+Function load_lora_B took 9.265899658203125 ms to run.
+cost realload: 18.9821720123291
+Function load_adapters took 19.00458335876465 ms to run.
+current batch size: 17 token used ratio: 0.09235384615384615
+cost load scan: 0.008821487426757812
+load 1 adapters, 18 in total
+Function load_lora_A took 9.357690811157227 ms to run.
+Function load_lora_B took 9.282350540161133 ms to run.
+cost realload: 19.0737247467041
+Function load_adapters took 19.09613609313965 ms to run.
+cost offload scan: 0.09274482727050781
+offload 1 adapters, 17 remains
+cost offload cat: 0.03528594970703125
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10895729064941406
+Function offload_adapters took 0.5998611450195312 ms to run.
+cost load scan: 0.010728836059570312
+load 1 adapters, 18 in total
+Function load_lora_A took 9.302139282226562 ms to run.
+Function load_lora_B took 9.250640869140625 ms to run.
+cost realload: 18.97287368774414
+Function load_adapters took 18.99552345275879 ms to run.
+cost offload scan: 0.08797645568847656
+offload 1 adapters, 17 remains
+cost offload cat: 0.03504753112792969
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10919570922851562
+Function offload_adapters took 0.5934238433837891 ms to run.
+cost offload scan: 0.09083747863769531
+offload 1 adapters, 16 remains
+cost offload cat: 0.03218650817871094
+cost offload free mem manager: 0.050067901611328125
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.1087188720703125
+Function offload_adapters took 0.5948543548583984 ms to run.
+cost load scan: 0.011920928955078125
+load 1 adapters, 17 in total
+Function load_lora_A took 9.299516677856445 ms to run.
+Function load_lora_B took 9.291887283325195 ms to run.
+cost realload: 19.0279483795166
+Function load_adapters took 19.059419631958008 ms to run.
+cost load scan: 0.01621246337890625
+load 1 adapters, 18 in total
+Function load_lora_A took 9.319543838500977 ms to run.
+Function load_lora_B took 9.273052215576172 ms to run.
+cost realload: 19.039630889892578
+Function load_adapters took 19.063711166381836 ms to run.
+current batch size: 19 token used ratio: 0.10256923076923077
+cost load scan: 0.00858306884765625
+load 1 adapters, 19 in total
+Function load_lora_A took 9.330272674560547 ms to run.
+Function load_lora_B took 9.295463562011719 ms to run.
+cost realload: 19.037485122680664
+Function load_adapters took 19.06275749206543 ms to run.
+cost offload scan: 0.0896453857421875
+offload 1 adapters, 18 remains
+cost offload cat: 0.03814697265625
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11229515075683594
+Function offload_adapters took 0.6079673767089844 ms to run.
+cost offload scan: 0.087738037109375
+offload 1 adapters, 17 remains
+cost offload cat: 0.03814697265625
+cost offload free mem manager: 0.04291534423828125
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11181831359863281
+Function offload_adapters took 0.6077289581298828 ms to run.
+cost offload scan: 0.08893013000488281
+offload 1 adapters, 16 remains
+cost offload cat: 0.03314018249511719
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.12159347534179688
+Function offload_adapters took 0.6062984466552734 ms to run.
+cost offload scan: 0.08916854858398438
+offload 1 adapters, 15 remains
+cost offload cat: 0.03361701965332031
+cost offload free mem manager: 0.045299530029296875
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11038780212402344
+Function offload_adapters took 0.5950927734375 ms to run.
+current batch size: 16 token used ratio: 0.09333846153846154
+cost offload scan: 0.11849403381347656
+offload 1 adapters, 14 remains
+cost offload cat: 0.04649162292480469
+cost offload free mem manager: 0.0591278076171875
+cost offload torch.empty: 0.03337860107421875
+cost offload a_loc update: 0.17976760864257812
+Function offload_adapters took 0.8647441864013672 ms to run.
+cost offload scan: 0.09012222290039062
+offload 1 adapters, 13 remains
+cost offload cat: 0.041484832763671875
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11897087097167969
+Function offload_adapters took 0.6289482116699219 ms to run.
+cost load scan: 0.01049041748046875
+load 1 adapters, 14 in total
+Function load_lora_A took 9.293317794799805 ms to run.
+Function load_lora_B took 9.241580963134766 ms to run.
+cost realload: 18.962860107421875
+Function load_adapters took 18.98503303527832 ms to run.
+current batch size: 15 token used ratio: 0.09443076923076923
+cost offload scan: 0.087738037109375
+offload 1 adapters, 13 remains
+cost offload cat: 0.04315376281738281
+cost offload free mem manager: 0.04601478576660156
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11563301086425781
+Function offload_adapters took 0.6124973297119141 ms to run.
+cost offload scan: 0.08726119995117188
+offload 1 adapters, 12 remains
+cost offload cat: 0.03147125244140625
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.5831718444824219 ms to run.
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 11 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10704994201660156
+Function offload_adapters took 0.5888938903808594 ms to run.
+cost load scan: 0.0073909759521484375
+load 0 adapters, 11 in total
+cost realload: 0.3216266632080078
+Function load_adapters took 0.3459453582763672 ms to run.
+cost offload scan: 0.08893013000488281
+offload 1 adapters, 10 remains
+cost offload cat: 0.03528594970703125
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.5924701690673828 ms to run.
+cost load scan: 0.0152587890625
+load 1 adapters, 11 in total
+Function load_lora_A took 9.306907653808594 ms to run.
+Function load_lora_B took 9.302377700805664 ms to run.
+cost realload: 19.0887451171875
+Function load_adapters took 19.11759376525879 ms to run.
+cost offload scan: 0.08726119995117188
+offload 1 adapters, 10 remains
+cost offload cat: 0.0362396240234375
+cost offload free mem manager: 0.047206878662109375
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: INFO:     127.0.0.1:52960 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52966 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52972 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53024 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53036 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53042 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53044 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53052 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53058 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53072 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53074 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53082 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53098 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53102 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53106 - "POST /generate_stream HTTP/1.1" 200 OK
+0.11277198791503906
+Function offload_adapters took 0.6291866302490234 ms to run.
+current batch size: 12 token used ratio: 0.07192307692307692
+cost offload scan: 0.08988380432128906
+offload 1 adapters, 9 remains
+cost offload cat: 0.037670135498046875
+cost offload free mem manager: 0.048160552978515625
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.13828277587890625
+Function offload_adapters took 0.6477832794189453 ms to run.
+cost offload scan: 0.08606910705566406
+offload 1 adapters, 8 remains
+cost offload cat: 0.03314018249511719
+cost offload free mem manager: 0.04315376281738281
+cost offload torch.empty: 0.031232833862304688
+cost offload a_loc update: 0.10514259338378906
+Function offload_adapters took 0.5872249603271484 ms to run.
+cost load scan: 0.0209808349609375
+load 2 adapters, 10 in total
+Function load_lora_A took 9.277105331420898 ms to run.
+Function load_lora_B took 9.24372673034668 ms to run.
+Function load_lora_A took 9.290218353271484 ms to run.
+Function load_lora_B took 9.251832962036133 ms to run.
+cost realload: 37.799835205078125
+Function load_adapters took 37.83392906188965 ms to run.
+offload 0 adapters, 10 remains
+Function offload_adapters took 0.012874603271484375 ms to run.
+offload 0 adapters, 10 remains
+Function offload_adapters took 0.012874603271484375 ms to run.
+current batch size: 10 token used ratio: 0.06070769230769231
+cost offload scan: 0.09036064147949219
+offload 1 adapters, 9 remains
+cost offload cat: 0.03337860107421875
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11038780212402344
+Function offload_adapters took 0.5960464477539062 ms to run.
+cost offload scan: 0.0858306884765625
+offload 1 adapters, 8 remains
+cost offload cat: 0.031948089599609375
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10609626770019531
+Function offload_adapters took 0.5862712860107422 ms to run.
+cost offload scan: 0.09226799011230469
+offload 1 adapters, 7 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.04315376281738281
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10633468627929688
+Function offload_adapters took 0.5857944488525391 ms to run.
+cost offload scan: 0.08177757263183594
+offload 1 adapters, 6 remains
+cost offload cat: 0.032901763916015625
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.1125335693359375
+Function offload_adapters took 0.5767345428466797 ms to run.
+cost load scan: 0.014781951904296875
+load 1 adapters, 7 in total
+Function load_lora_A took 9.329080581665039 ms to run.
+Function load_lora_B took 9.238004684448242 ms to run.
+cost realload: 19.04749870300293
+Function load_adapters took 19.07801628112793 ms to run.
+Avg tokens(prompt+generate) throughput:  733.698 tokens/s
+Avg prompt tokens throughput:            318.099 tokens/s
+Avg generate tokens throughput:          415.600 tokens/s
+current batch size: 7 token used ratio: 0.040723076923076924
+cost load scan: 0.011920928955078125
+load 1 adapters, 8 in total
+Function load_lora_A took 9.331941604614258 ms to run.
+Function load_lora_B took 9.284734725952148 ms to run.
+cost realload: 19.037961959838867
+Function load_adapters took 19.060611724853516 ms to run.
+cost load scan: 0.010013580322265625
+load 1 adapters, 9 in total
+Function load_lora_A took 9.27877426147461 ms to run.
+Function load_lora_B took 9.23776626586914 ms to run.
+cost realload: 18.949031829833984
+Function load_adapters took 18.971681594848633 ms to run.
+cost offload scan: 0.08559226989746094
+offload 1 adapters, 8 remains
+cost offload cat: 0.04267692565917969
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10704994201660156
+Function offload_adapters took 0.5948543548583984 ms to run.
+cost offload scan: 0.08726119995117188
+offload 1 adapters, 7 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.10919570922851562
+Function offload_adapters took 0.5857944488525391 ms to run.
+current batch size: 7 token used ratio: 0.03786153846153846
+cost load scan: 0.01239776611328125
+load 1 adapters, 8 in total
+Function load_lora_A took 9.290218353271484 ms to run.
+Function load_lora_B took 9.29570198059082 ms to run.
+cost realload: 19.01388168334961
+Function load_adapters took 19.036531448364258 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 9 in total
+Function load_lora_A took 9.283781051635742 ms to run.
+Function load_lora_B took 9.217977523803711 ms to run.
+cost realload: 18.924951553344727
+Function load_adapters took 18.947839736938477 ms to run.
+cost load scan: 0.012636184692382812
+load 1 adapters, 10 in total
+Function load_lora_A took 9.259700775146484 ms to run.
+Function load_lora_B took 9.214401245117188 ms to run.
+cost realload: 18.913745880126953
+Function load_adapters took 18.94211769104004 ms to run.
+cost offload scan: 0.08678436279296875
+offload 1 adapters, 9 remains
+cost offload cat: 0.03528594970703125
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11324882507324219
+Function offload_adapters took 0.5919933319091797 ms to run.
+cost load scan: 0.010251998901367188
+load 1 adapters, 10 in total
+Function load_lora_A took 9.339570999145508 ms to run.
+Function load_lora_B took 9.229898452758789 ms to run.
+cost realload: 18.99242401123047
+Function load_adapters took 19.01555061340332 ms to run.
+current batch size: 10 token used ratio: 0.05806153846153846
+cost offload scan: 0.08559226989746094
+offload 1 adapters, 9 remains
+cost offload cat: 0.03814697265625
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.110626220703125
+Function offload_adapters took 0.5946159362792969 ms to run.
+cost load scan: 0.015735626220703125
+load 1 adapters, 10 in total
+Function load_lora_A took 9.339332580566406 ms to run.
+Function load_lora_B took 9.248018264770508 ms to run.
+cost realload: 19.02318000793457
+Function load_adapters took 19.047260284423828 ms to run.
+cost load scan: 0.014543533325195312
+load 1 adapters, 11 in total
+Function load_lora_A took 9.29117202758789 ms to run.
+Function load_lora_B took 9.246587753295898 ms to run.
+cost realload: 19.352197647094727
+Function load_adapters took 19.374847412109375 ms to run.
+current batch size: 11 token used ratio: 0.06481538461538462
+cost load scan: 0.018596649169921875
+load 1 adapters, 12 in total
+Function load_lora_A took 9.315967559814453 ms to run.
+Function load_lora_B took 9.246587753295898 ms to run.
+cost realload: 19.121646881103516
+Function load_adapters took 19.148588180541992 ms to run.
+cost offload scan: 0.09822845458984375
+offload 1 adapters, 11 remains
+cost offload cat: 0.04649162292480469
+cost offload free mem manager: 0.051021575927734375
+cost offload torch.empty: 0.03147125244140625
+cost offload a_loc update: 0.1456737518310547
+Function offload_adapters took 0.751495361328125 ms to run.
+cost load scan: 0.014543533325195312
+load 1 adapters, 12 in total
+Function load_lora_A took 9.311676025390625 ms to run.
+Function load_lora_B took 9.27877426147461 ms to run.
+cost realload: 19.017696380615234
+Function load_adapters took 19.040822982788086 ms to run.
+current batch size: 12 token used ratio: 0.07766153846153846
+cost load scan: 0.012874603271484375
+load 1 adapters, 13 in total
+Function load_lora_A took 9.370803833007812 ms to run.
+Function load_lora_B took 9.277105331420898 ms to run.
+cost realload: 19.081830978393555
+Function load_adapters took 19.10400390625 ms to run.
+cost offload scan: 0.09250640869140625
+offload 1 adapters, 12 remains
+cost offload cat: 0.03719329833984375
+cost offload free mem manager: 0.045299530029296875
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.6084442138671875 ms to run.
+INFO:     127.0.0.1:53120 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53122 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53134 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53142 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53148 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54740 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54752 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54766 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54782 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54792 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54800 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54808 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54816 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54818 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54820 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54836 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54870 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54884 - "POST /generate_stream HTTP/1.1" 200 OK
+cost load scan: 0.012636184692382812
+load 1 adapters, 13 in total
+Function load_lora_A took 9.334087371826172 ms to run.
+Function load_lora_B took 9.247779846191406 ms to run.
+cost realload: 19.062042236328125
+Function load_adapters took 19.095897674560547 ms to run.
+cost load scan: 0.012159347534179688
+load 1 adapters, 14 in total
+Function load_lora_A took 9.310007095336914 ms to run.
+Function load_lora_B took 9.248733520507812 ms to run.
+cost realload: 19.001007080078125
+Function load_adapters took 19.025087356567383 ms to run.
+cost offload scan: 0.09083747863769531
+offload 1 adapters, 13 remains
+cost offload cat: 0.037670135498046875
+cost offload free mem manager: 0.049591064453125
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.1201629638671875
+Function offload_adapters took 0.6301403045654297 ms to run.
+cost offload scan: 0.09250640869140625
+offload 1 adapters, 12 remains
+cost offload cat: 0.0324249267578125
+cost offload free mem manager: 0.05030632019042969
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.1087188720703125
+Function offload_adapters took 0.6017684936523438 ms to run.
+cost load scan: 0.011920928955078125
+load 1 adapters, 13 in total
+Function load_lora_A took 9.356975555419922 ms to run.
+Function load_lora_B took 9.264230728149414 ms to run.
+cost realload: 19.062042236328125
+Function load_adapters took 19.084692001342773 ms to run.
+current batch size: 13 token used ratio: 0.07613846153846154
+cost load scan: 0.011920928955078125
+load 1 adapters, 14 in total
+Function load_lora_A took 9.314298629760742 ms to run.
+Function load_lora_B took 9.264945983886719 ms to run.
+cost realload: 19.052743911743164
+Function load_adapters took 19.076824188232422 ms to run.
+cost offload scan: 0.10228157043457031
+offload 1 adapters, 13 remains
+cost offload cat: 0.03933906555175781
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.11181831359863281
+Function offload_adapters took 0.6256103515625 ms to run.
+cost load scan: 0.013828277587890625
+load 2 adapters, 15 in total
+Function load_lora_A took 9.34600830078125 ms to run.
+Function load_lora_B took 9.27877426147461 ms to run.
+Function load_lora_A took 9.306669235229492 ms to run.
+Function load_lora_B took 9.246587753295898 ms to run.
+cost realload: 37.679195404052734
+Function load_adapters took 37.70089149475098 ms to run.
+cost offload scan: 0.09298324584960938
+offload 1 adapters, 14 remains
+cost offload cat: 0.033855438232421875
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.022411346435546875
+cost offload a_loc update: 0.11086463928222656
+Function offload_adapters took 0.5962848663330078 ms to run.
+cost offload scan: 0.08821487426757812
+offload 1 adapters, 13 remains
+cost offload cat: 0.03314018249511719
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11682510375976562
+Function offload_adapters took 0.6000995635986328 ms to run.
+Avg tokens(prompt+generate) throughput:  762.492 tokens/s
+Avg prompt tokens throughput:            463.252 tokens/s
+Avg generate tokens throughput:          299.240 tokens/s
+current batch size: 13 token used ratio: 0.08164615384615384
+cost offload scan: 0.09083747863769531
+offload 1 adapters, 12 remains
+cost offload cat: 0.03719329833984375
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.6127357482910156 ms to run.
+cost load scan: 0.012636184692382812
+load 1 adapters, 13 in total
+Function load_lora_A took 9.330034255981445 ms to run.
+Function load_lora_B took 9.293317794799805 ms to run.
+cost realload: 19.083738327026367
+Function load_adapters took 19.110918045043945 ms to run.
+cost offload scan: 0.08535385131835938
+offload 1 adapters, 12 remains
+cost offload cat: 0.036716461181640625
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10514259338378906
+Function offload_adapters took 0.5846023559570312 ms to run.
+cost load scan: 0.0152587890625
+load 1 adapters, 13 in total
+Function load_lora_A took 9.328365325927734 ms to run.
+Function load_lora_B took 9.238719940185547 ms to run.
+cost realload: 18.99123191833496
+Function load_adapters took 19.01388168334961 ms to run.
+cost offload scan: 0.08797645568847656
+offload 1 adapters, 12 remains
+cost offload cat: 0.033855438232421875
+cost offload free mem manager: 0.04291534423828125
+cost offload torch.empty: 0.022172927856445312
+cost offload a_loc update: 0.10752677917480469
+Function offload_adapters took 0.5879402160644531 ms to run.
+cost load scan: 0.012159347534179688
+load 1 adapters, 13 in total
+Function load_lora_A took 9.326696395874023 ms to run.
+Function load_lora_B took 9.271621704101562 ms to run.
+cost realload: 19.011497497558594
+Function load_adapters took 19.034624099731445 ms to run.
+current batch size: 13 token used ratio: 0.07761538461538461
+cost offload scan: 0.08630752563476562
+offload 1 adapters, 12 remains
+cost offload cat: 0.034809112548828125
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.5927085876464844 ms to run.
+cost load scan: 0.017642974853515625
+load 2 adapters, 14 in total
+Function load_lora_A took 9.329795837402344 ms to run.
+Function load_lora_B took 9.249687194824219 ms to run.
+Function load_lora_A took 9.316682815551758 ms to run.
+Function load_lora_B took 9.258031845092773 ms to run.
+cost realload: 37.686824798583984
+Function load_adapters took 37.711381912231445 ms to run.
+cost load scan: 0.011205673217773438
+load 1 adapters, 15 in total
+Function load_lora_A took 9.35506820678711 ms to run.
+Function load_lora_B took 9.330272674560547 ms to run.
+cost realload: 19.120454788208008
+Function load_adapters took 19.14381980895996 ms to run.
+cost load scan: 0.009059906005859375
+load 1 adapters, 16 in total
+Function load_lora_A took 9.328842163085938 ms to run.
+Function load_lora_B took 9.250640869140625 ms to run.
+cost realload: 19.001007080078125
+Function load_adapters took 19.028902053833008 ms to run.
+cost offload scan: 0.08869171142578125
+offload 1 adapters, 15 remains
+cost offload cat: 0.03838539123535156
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11181831359863281
+Function offload_adapters took 0.6074905395507812 ms to run.
+cost load scan: 0.015974044799804688
+load 1 adapters, 16 in total
+Function load_lora_A took 9.324312210083008 ms to run.
+Function load_lora_B took 9.245872497558594 ms to run.
+cost realload: 18.987178802490234
+Function load_adapters took 19.008159637451172 ms to run.
+cost offload scan: 0.09226799011230469
+offload 1 adapters, 15 remains
+cost offload cat: 0.03218650817871094
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.110626220703125
+Function offload_adapters took 0.5936622619628906 ms to run.
+cost load scan: 0.016689300537109375
+load 4 adapters, 19 in total
+Function load_lora_A took 9.319067001342773 ms to run.
+Function load_lora_B took 9.260416030883789 ms to run.
+Function load_lora_A took 9.315252304077148 ms to run.
+Function load_lora_B took 9.314298629760742 ms to run.
+Function load_lora_A took 9.334087371826172 ms to run.
+Function load_lora_B took 9.311437606811523 ms to run.
+Function load_lora_A took 9.35220718383789 ms to run.
+Function load_lora_B took 9.266138076782227 ms to run.
+cost realload: 75.21891593933105
+Function load_adapters took 75.2418041229248 ms to run.
+current batch size: 20 token used ratio: 0.11323076923076923
+cost load scan: 0.008106231689453125
+load 0 adapters, 19 in total
+cost realload: 0.31757354736328125
+Function load_adapters took 0.3428459167480469 ms to run.
+cost load scan: 0.013113021850585938
+load 1 adapters, 20 in total
+Function load_lora_A took 9.306907653808594 ms to run.
+INFO:     127.0.0.1:54898 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54904 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54910 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54924 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54926 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54930 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46736 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46746 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46762 - "POST /generate_stream HTTP/1.1" 200 OK
+Function load_lora_B took 9.303808212280273 ms to run.
+cost realload: 19.125938415527344
+Function load_adapters took 19.166231155395508 ms to run.
+cost load scan: 0.015974044799804688
+load 1 adapters, 21 in total
+Function load_lora_A took 9.276151657104492 ms to run.
+Function load_lora_B took 9.279012680053711 ms to run.
+cost realload: 18.993139266967773
+Function load_adapters took 19.01531219482422 ms to run.
+cost load scan: 0.009298324584960938
+load 1 adapters, 22 in total
+Function load_lora_A took 9.310483932495117 ms to run.
+Function load_lora_B took 9.293317794799805 ms to run.
+cost realload: 19.08731460571289
+Function load_adapters took 19.111156463623047 ms to run.
+current batch size: 24 token used ratio: 0.1484
+cost load scan: 0.01239776611328125
+load 1 adapters, 23 in total
+Function load_lora_A took 9.241342544555664 ms to run.
+Function load_lora_B took 9.248495101928711 ms to run.
+cost realload: 18.923044204711914
+Function load_adapters took 18.94545555114746 ms to run.
+cost offload scan: 0.13017654418945312
+offload 2 adapters, 21 remains
+cost offload cat: 0.027179718017578125
+cost offload free mem manager: 0.04553794860839844
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11920928955078125
+Function offload_adapters took 0.6492137908935547 ms to run.
+cost offload scan: 0.09584426879882812
+offload 1 adapters, 20 remains
+cost offload cat: 0.03790855407714844
+cost offload free mem manager: 0.04601478576660156
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10967254638671875
+Function offload_adapters took 0.621795654296875 ms to run.
+cost offload scan: 0.09417533874511719
+offload 1 adapters, 19 remains
+cost offload cat: 0.03981590270996094
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11324882507324219
+Function offload_adapters took 0.6206035614013672 ms to run.
+cost load scan: 0.0133514404296875
+load 1 adapters, 20 in total
+Function load_lora_A took 9.312868118286133 ms to run.
+Function load_lora_B took 9.26828384399414 ms to run.
+cost realload: 18.987655639648438
+Function load_adapters took 19.00959014892578 ms to run.
+cost load scan: 0.008821487426757812
+load 0 adapters, 20 in total
+cost realload: 0.30612945556640625
+Function load_adapters took 0.3311634063720703 ms to run.
+cost offload scan: 0.0934600830078125
+offload 1 adapters, 19 remains
+cost offload cat: 0.03933906555175781
+cost offload free mem manager: 0.04863739013671875
+cost offload torch.empty: 0.02384185791015625
+cost offload a_loc update: 0.12469291687011719
+Function offload_adapters took 0.6358623504638672 ms to run.
+cost offload scan: 0.09417533874511719
+offload 1 adapters, 18 remains
+cost offload cat: 0.0362396240234375
+cost offload free mem manager: 0.04696846008300781
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11920928955078125
+Function offload_adapters took 0.6296634674072266 ms to run.
+current batch size: 21 token used ratio: 0.12863076923076924
+cost offload scan: 0.0858306884765625
+offload 1 adapters, 17 remains
+cost offload cat: 0.03218650817871094
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.022411346435546875
+cost offload a_loc update: 0.10752677917480469
+Function offload_adapters took 0.5986690521240234 ms to run.
+cost offload scan: 0.09059906005859375
+offload 1 adapters, 16 remains
+cost offload cat: 0.03314018249511719
+cost offload free mem manager: 0.051021575927734375
+cost offload torch.empty: 0.02384185791015625
+cost offload a_loc update: 0.10895729064941406
+Function offload_adapters took 0.6115436553955078 ms to run.
+cost offload scan: 0.09322166442871094
+offload 1 adapters, 15 remains
+cost offload cat: 0.032901763916015625
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.11491775512695312
+Function offload_adapters took 0.5979537963867188 ms to run.
+offload 0 adapters, 15 remains
+Function offload_adapters took 0.012159347534179688 ms to run.
+offload 0 adapters, 15 remains
+Function offload_adapters took 0.012874603271484375 ms to run.
+cost offload scan: 0.091552734375
+offload 1 adapters, 14 remains
+cost offload cat: 0.0324249267578125
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.10895729064941406
+Function offload_adapters took 0.5915164947509766 ms to run.
+cost load scan: 0.01049041748046875
+load 1 adapters, 15 in total
+Function load_lora_A took 9.353876113891602 ms to run.
+Function load_lora_B took 9.25755500793457 ms to run.
+cost realload: 19.059181213378906
+Function load_adapters took 19.083499908447266 ms to run.
+current batch size: 16 token used ratio: 0.10453846153846154
+cost offload scan: 0.13327598571777344
+offload 2 adapters, 13 remains
+cost offload cat: 0.03981590270996094
+cost offload free mem manager: 0.04601478576660156
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.10991096496582031
+Function offload_adapters took 0.6537437438964844 ms to run.
+cost offload scan: 0.09179115295410156
+offload 1 adapters, 12 remains
+cost offload cat: 0.03409385681152344
+cost offload free mem manager: 0.04291534423828125
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.11038780212402344
+Function offload_adapters took 0.6005764007568359 ms to run.
+Avg tokens(prompt+generate) throughput: 1045.123 tokens/s
+Avg prompt tokens throughput:            587.545 tokens/s
+Avg generate tokens throughput:          457.578 tokens/s
+cost offload scan: 0.087738037109375
+offload 1 adapters, 11 remains
+cost offload cat: 0.040531158447265625
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10943412780761719
+Function offload_adapters took 0.6058216094970703 ms to run.
+cost offload scan: 0.08535385131835938
+offload 1 adapters, 10 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.042438507080078125
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10824203491210938
+Function offload_adapters took 0.5803108215332031 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 11 in total
+Function load_lora_A took 9.274721145629883 ms to run.
+Function load_lora_B took 9.204864501953125 ms to run.
+cost realload: 18.916606903076172
+Function load_adapters took 18.941402435302734 ms to run.
+current batch size: 12 token used ratio: 0.08609230769230769
+cost offload scan: 0.08916854858398438
+offload 1 adapters, 10 remains
+cost offload cat: 0.039577484130859375
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11968612670898438
+Function offload_adapters took 0.6108283996582031 ms to run.
+cost load scan: 0.0133514404296875
+load 2 adapters, 12 in total
+Function load_lora_A took 9.320497512817383 ms to run.
+Function load_lora_B took 9.240150451660156 ms to run.
+Function load_lora_A took 9.319067001342773 ms to run.
+Function load_lora_B took 9.271860122680664 ms to run.
+cost realload: 37.64796257019043
+Function load_adapters took 37.66942024230957 ms to run.
+cost offload scan: 0.08702278137207031
+offload 1 adapters, 11 remains
+cost offload cat: 0.035762786865234375
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10657310485839844
+Function offload_adapters took 0.5879402160644531 ms to run.
+cost offload scan: 0.09107589721679688
+offload 1 adapters, 10 remains
+cost offload cat: 0.03457069396972656
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10967254638671875
+Function offload_adapters took 0.5903244018554688 ms to run.
+cost offload scan: 0.09274482727050781
+offload 1 adapters, 9 remains
+cost offload cat: 0.036716461181640625
+cost offload free mem manager: 0.04696846008300781
+cost offload torch.empty: 0.028133392333984375
+cost offload a_loc update: 0.14710426330566406
+INFO:     127.0.0.1:46770 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46784 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46792 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46808 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46814 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46828 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46842 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46866 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46876 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46884 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46890 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46904 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46908 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38798 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38808 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38812 - "POST /generate_stream HTTP/1.1" 200 OK
+Function offload_adapters took 0.6868839263916016 ms to run.
+offload 0 adapters, 9 remains
+Function offload_adapters took 0.013589859008789062 ms to run.
+cost offload scan: 0.08344650268554688
+offload 1 adapters, 8 remains
+cost offload cat: 0.03218650817871094
+cost offload free mem manager: 0.04267692565917969
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11706352233886719
+Function offload_adapters took 0.5819797515869141 ms to run.
+cost load scan: 0.025510787963867188
+load 0 adapters, 8 in total
+cost realload: 0.3361701965332031
+Function load_adapters took 0.3619194030761719 ms to run.
+current batch size: 9 token used ratio: 0.05624615384615385
+cost offload scan: 0.08463859558105469
+offload 1 adapters, 7 remains
+cost offload cat: 0.03790855407714844
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.022411346435546875
+cost offload a_loc update: 0.11444091796875
+Function offload_adapters took 0.5977153778076172 ms to run.
+cost offload scan: 0.09131431579589844
+offload 1 adapters, 6 remains
+cost offload cat: 0.03695487976074219
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.10848045349121094
+Function offload_adapters took 0.6017684936523438 ms to run.
+cost load scan: 0.011920928955078125
+load 2 adapters, 8 in total
+Function load_lora_A took 9.302616119384766 ms to run.
+Function load_lora_B took 9.271383285522461 ms to run.
+Function load_lora_A took 9.340763092041016 ms to run.
+Function load_lora_B took 9.251832962036133 ms to run.
+cost realload: 37.659645080566406
+Function load_adapters took 37.682533264160156 ms to run.
+cost load scan: 0.01049041748046875
+load 1 adapters, 9 in total
+Function load_lora_A took 9.365320205688477 ms to run.
+Function load_lora_B took 9.261608123779297 ms to run.
+cost realload: 19.04916763305664
+Function load_adapters took 19.0737247467041 ms to run.
+current batch size: 10 token used ratio: 0.058
+cost load scan: 0.014781951904296875
+load 1 adapters, 10 in total
+Function load_lora_A took 9.330987930297852 ms to run.
+Function load_lora_B took 9.288549423217773 ms to run.
+cost realload: 19.06418800354004
+Function load_adapters took 19.086599349975586 ms to run.
+cost offload scan: 0.08916854858398438
+offload 1 adapters, 9 remains
+cost offload cat: 0.037670135498046875
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.025033950805664062
+cost offload a_loc update: 0.12326240539550781
+Function offload_adapters took 0.6189346313476562 ms to run.
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 8 remains
+cost offload cat: 0.03314018249511719
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11658668518066406
+Function offload_adapters took 0.5936622619628906 ms to run.
+cost load scan: 0.013828277587890625
+load 1 adapters, 9 in total
+Function load_lora_A took 9.312152862548828 ms to run.
+Function load_lora_B took 9.310722351074219 ms to run.
+cost realload: 19.053936004638672
+Function load_adapters took 19.07658576965332 ms to run.
+current batch size: 10 token used ratio: 0.056584615384615386
+offload 0 adapters, 9 remains
+Function offload_adapters took 0.015020370483398438 ms to run.
+cost load scan: 0.014781951904296875
+load 1 adapters, 10 in total
+Function load_lora_A took 9.285926818847656 ms to run.
+Function load_lora_B took 9.243488311767578 ms to run.
+cost realload: 18.956422805786133
+Function load_adapters took 18.979549407958984 ms to run.
+cost offload scan: 0.09560585021972656
+offload 1 adapters, 9 remains
+cost offload cat: 0.04029273986816406
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.1163482666015625
+Function offload_adapters took 0.6291866302490234 ms to run.
+cost load scan: 0.008821487426757812
+load 1 adapters, 10 in total
+Function load_lora_A took 9.329080581665039 ms to run.
+Function load_lora_B took 9.287357330322266 ms to run.
+cost realload: 19.051790237426758
+Function load_adapters took 19.075632095336914 ms to run.
+current batch size: 10 token used ratio: 0.058953846153846155
+cost load scan: 0.015735626220703125
+load 2 adapters, 12 in total
+Function load_lora_A took 9.351730346679688 ms to run.
+Function load_lora_B took 9.230613708496094 ms to run.
+Function load_lora_A took 9.345531463623047 ms to run.
+Function load_lora_B took 9.319782257080078 ms to run.
+cost realload: 37.90140151977539
+Function load_adapters took 37.930965423583984 ms to run.
+cost load scan: 0.012159347534179688
+load 1 adapters, 13 in total
+Function load_lora_A took 9.317636489868164 ms to run.
+Function load_lora_B took 9.2926025390625 ms to run.
+cost realload: 19.081592559814453
+Function load_adapters took 19.11163330078125 ms to run.
+cost offload scan: 0.09202957153320312
+offload 1 adapters, 12 remains
+cost offload cat: 0.042438507080078125
+cost offload free mem manager: 0.04887580871582031
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.12159347534179688
+Function offload_adapters took 0.6394386291503906 ms to run.
+current batch size: 12 token used ratio: 0.07633846153846154
+cost load scan: 0.011205673217773438
+load 1 adapters, 13 in total
+Function load_lora_A took 9.324312210083008 ms to run.
+Function load_lora_B took 9.275674819946289 ms to run.
+cost realload: 19.08254623413086
+Function load_adapters took 19.110441207885742 ms to run.
+cost offload scan: 0.09131431579589844
+offload 1 adapters, 12 remains
+cost offload cat: 0.03790855407714844
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11134147644042969
+Function offload_adapters took 0.6108283996582031 ms to run.
+cost load scan: 0.007867813110351562
+load 0 adapters, 12 in total
+cost realload: 0.3058910369873047
+Function load_adapters took 0.3314018249511719 ms to run.
+cost offload scan: 0.09131431579589844
+offload 1 adapters, 11 remains
+cost offload cat: 0.03361701965332031
+cost offload free mem manager: 0.04363059997558594
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11754035949707031
+Function offload_adapters took 0.5974769592285156 ms to run.
+cost load scan: 0.0133514404296875
+load 1 adapters, 12 in total
+Function load_lora_A took 9.31239128112793 ms to run.
+Function load_lora_B took 9.272336959838867 ms to run.
+cost realload: 19.004344940185547
+Function load_adapters took 19.0274715423584 ms to run.
+cost offload scan: 0.09679794311523438
+offload 1 adapters, 11 remains
+cost offload cat: 0.03337860107421875
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.12278556823730469
+Function offload_adapters took 0.614166259765625 ms to run.
+Avg tokens(prompt+generate) throughput:  781.461 tokens/s
+Avg prompt tokens throughput:            471.031 tokens/s
+Avg generate tokens throughput:          310.430 tokens/s
+cost load scan: 0.013828277587890625
+load 1 adapters, 12 in total
+Function load_lora_A took 9.28807258605957 ms to run.
+Function load_lora_B took 9.243249893188477 ms to run.
+cost realload: 18.950223922729492
+Function load_adapters took 18.97263526916504 ms to run.
+cost load scan: 0.010967254638671875
+load 1 adapters, 13 in total
+Function load_lora_A took 9.305000305175781 ms to run.
+Function load_lora_B took 9.29403305053711 ms to run.
+cost realload: 19.01388168334961
+Function load_adapters took 19.036531448364258 ms to run.
+current batch size: 14 token used ratio: 0.0813076923076923
+cost offload scan: 0.08893013000488281
+offload 1 adapters, 12 remains
+cost offload cat: 0.03266334533691406
+cost offload free mem manager: 0.0438690185546875
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.10943412780761719
+Function offload_adapters took 0.5881786346435547 ms to run.
+cost load scan: 0.014781951904296875
+load 1 adapters, 13 in total
+Function load_lora_A took 9.300470352172852 ms to run.
+Function load_lora_B took 9.250879287719727 ms to run.
+cost realload: 18.97597312927246
+INFO:     127.0.0.1:38822 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38824 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38828 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38830 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38846 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38858 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38872 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38888 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38902 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38912 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38926 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38940 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38950 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38956 - "POST /generate_stream HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38966 - "POST /generate_stream HTTP/1.1" 200 OK
+Function load_adapters took 18.99862289428711 ms to run.
+offload 0 adapters, 13 remains
+Function offload_adapters took 0.013589859008789062 ms to run.
+cost offload scan: 0.09322166442871094
+offload 1 adapters, 12 remains
+cost offload cat: 0.03790855407714844
+cost offload free mem manager: 0.04506111145019531
+cost offload torch.empty: 0.02384185791015625
+cost offload a_loc update: 0.11348724365234375
+Function offload_adapters took 0.6227493286132812 ms to run.
+current batch size: 12 token used ratio: 0.07295384615384616
+cost load scan: 0.014066696166992188
+load 1 adapters, 13 in total
+Function load_lora_A took 9.329795837402344 ms to run.
+Function load_lora_B took 9.264707565307617 ms to run.
+cost realload: 19.02937889099121
+Function load_adapters took 19.051790237426758 ms to run.
+cost load scan: 0.011444091796875
+load 1 adapters, 14 in total
+Function load_lora_A took 9.33218002319336 ms to run.
+Function load_lora_B took 9.317874908447266 ms to run.
+cost realload: 19.105195999145508
+Function load_adapters took 19.129514694213867 ms to run.
+cost offload scan: 0.09131431579589844
+offload 1 adapters, 13 remains
+cost offload cat: 0.03361701965332031
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.12087821960449219
+Function offload_adapters took 0.6060600280761719 ms to run.
+cost offload scan: 0.12111663818359375
+offload 1 adapters, 12 remains
+cost offload cat: 0.04863739013671875
+cost offload free mem manager: 0.06532669067382812
+cost offload torch.empty: 0.036716461181640625
+cost offload a_loc update: 0.16880035400390625
+Function offload_adapters took 0.8862018585205078 ms to run.
+cost load scan: 0.013589859008789062
+load 1 adapters, 13 in total
+Function load_lora_A took 9.348392486572266 ms to run.
+Function load_lora_B took 9.265661239624023 ms to run.
+cost realload: 19.031286239624023
+Function load_adapters took 19.058942794799805 ms to run.
+cost load scan: 0.014543533325195312
+load 1 adapters, 14 in total
+Function load_lora_A took 9.28640365600586 ms to run.
+Function load_lora_B took 9.296417236328125 ms to run.
+cost realload: 18.990516662597656
+Function load_adapters took 19.011974334716797 ms to run.
+cost offload scan: 0.087738037109375
+offload 1 adapters, 13 remains
+cost offload cat: 0.034332275390625
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.11801719665527344
+Function offload_adapters took 0.5998611450195312 ms to run.
+cost load scan: 0.011920928955078125
+load 1 adapters, 14 in total
+Function load_lora_A took 9.320497512817383 ms to run.
+Function load_lora_B took 9.26828384399414 ms to run.
+cost realload: 19.028186798095703
+Function load_adapters took 19.059419631958008 ms to run.
+current batch size: 14 token used ratio: 0.07346153846153847
+cost offload scan: 0.08940696716308594
+offload 1 adapters, 13 remains
+cost offload cat: 0.03552436828613281
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.10967254638671875
+Function offload_adapters took 0.5967617034912109 ms to run.
+cost load scan: 0.014781951904296875
+load 1 adapters, 14 in total
+Function load_lora_A took 9.317636489868164 ms to run.
+Function load_lora_B took 9.264707565307617 ms to run.
+cost realload: 19.00005340576172
+Function load_adapters took 19.024133682250977 ms to run.
+cost load scan: 0.01621246337890625
+load 1 adapters, 15 in total
+Function load_lora_A took 9.320974349975586 ms to run.
+Function load_lora_B took 9.27734375 ms to run.
+cost realload: 19.030332565307617
+Function load_adapters took 19.052505493164062 ms to run.
+cost load scan: 0.016689300537109375
+load 3 adapters, 18 in total
+Function load_lora_A took 9.305953979492188 ms to run.
+Function load_lora_B took 9.27734375 ms to run.
+Function load_lora_A took 9.279251098632812 ms to run.
+Function load_lora_B took 9.299278259277344 ms to run.
+Function load_lora_A took 9.29117202758789 ms to run.
+Function load_lora_B took 9.243965148925781 ms to run.
+cost realload: 56.26535415649414
+Function load_adapters took 56.28681182861328 ms to run.
+cost offload scan: 0.09322166442871094
+offload 1 adapters, 17 remains
+cost offload cat: 0.03504753112792969
+cost offload free mem manager: 0.04410743713378906
+cost offload torch.empty: 0.023365020751953125
+cost offload a_loc update: 0.11587142944335938
+Function offload_adapters took 0.6151199340820312 ms to run.
+cost load scan: 0.013113021850585938
+load 2 adapters, 19 in total
+Function load_lora_A took 9.301185607910156 ms to run.
+Function load_lora_B took 9.31239128112793 ms to run.
+Function load_lora_A took 9.258508682250977 ms to run.
+Function load_lora_B took 9.2315673828125 ms to run.
+cost realload: 37.5974178314209
+Function load_adapters took 37.61911392211914 ms to run.
+current batch size: 19 token used ratio: 0.10207692307692308
+cost load scan: 0.02002716064453125
+load 1 adapters, 20 in total
+Function load_lora_A took 9.302377700805664 ms to run.
+Function load_lora_B took 9.242057800292969 ms to run.
+cost realload: 19.130706787109375
+Function load_adapters took 19.15907859802246 ms to run.
+cost load scan: 0.00858306884765625
+load 1 adapters, 21 in total
+Function load_lora_A took 9.307622909545898 ms to run.
+Function load_lora_B took 9.232044219970703 ms to run.
+cost realload: 18.950700759887695
+Function load_adapters took 18.973827362060547 ms to run.
+cost offload scan: 0.09441375732421875
+offload 1 adapters, 20 remains
+cost offload cat: 0.03528594970703125
+cost offload free mem manager: 0.04458427429199219
+cost offload torch.empty: 0.02288818359375
+cost offload a_loc update: 0.118255615234375
+Function offload_adapters took 0.6113052368164062 ms to run.
+cost load scan: 0.015020370483398438
+load 1 adapters, 21 in total
+Function load_lora_A took 9.366989135742188 ms to run.
+Function load_lora_B took 9.273529052734375 ms to run.
+cost realload: 19.206523895263672
+Function load_adapters took 19.23346519470215 ms to run.
+current batch size: 21 token used ratio: 0.12190769230769231
+cost offload scan: 0.09632110595703125
+offload 1 adapters, 20 remains
+cost offload cat: 0.05245208740234375
+cost offload free mem manager: 0.051975250244140625
+cost offload torch.empty: 0.024080276489257812
+cost offload a_loc update: 0.1239776611328125
+Function offload_adapters took 0.6647109985351562 ms to run.
+cost offload scan: 0.09202957153320312
+offload 1 adapters, 19 remains
+cost offload cat: 0.040531158447265625
+cost offload free mem manager: 0.049591064453125
+cost offload torch.empty: 0.023603439331054688
+cost offload a_loc update: 0.11372566223144531
+Function offload_adapters took 0.6356239318847656 ms to run.
+cost offload scan: 0.09894371032714844
+offload 1 adapters, 18 remains
+cost offload cat: 0.03218650817871094
+cost offload free mem manager: 0.044345855712890625
+cost offload torch.empty: 0.023126602172851562
+cost offload a_loc update: 0.11205673217773438
+Function offload_adapters took 0.6062984466552734 ms to run.
+cost offload scan: 0.09393692016601562
+offload 1 adapters, 17 remains
+cost offload cat: 0.0362396240234375
+cost offload free mem manager: 0.04482269287109375
+cost offload torch.empty: 0.022649765014648438
+cost offload a_loc update: 0.11301040649414062
+Function offload_adapters took 0.6060600280761719 ms to run.
+current batch size: 17 token used ratio: 0.11064615384615385
+cost offload scan: 0.08749961853027344
+offload 1 adapters, 16 remains
+cost offload cat: 0.03170967102050781
+cost offload free mem manager: 0.043392181396484375
+cost offload torch.empty: 0.02956390380859375
+cost offload a_loc update: 0.10967254638671875
+Function offload_adapters took 0.5960464477539062 ms to run.
+cost offload scan: 0.1125335693359375
+offload 1 adapters, 15 remains
+cost offload cat: 0.03933906555175781
+cost offload free mem manager: 0.05412101745605469
+cost offload torch.empty: 0.03361701965332031
+cost offload a_loc update: 0.1461505889892578
+Function offload_adapters took 0.7536411285400391 ms to run.

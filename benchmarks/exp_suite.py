@@ -10,11 +10,13 @@ BASE_MODEL = {
 }
 
 LORA_DIR = {
+        "S1_old": ["dummy-lora-7b-rank-8"],
         "S1": ["dummy-lora-7b-rank-8"],
         "S2": ["dummy-lora-7b-rank-64", "dummy-lora-7b-rank-32",
                "dummy-lora-7b-rank-16", "dummy-lora-7b-rank-8"],
         "S3": ["dummy-lora-13b-rank-16"],
-        "S4": ["dummy-lora-13b-rank-64",
+        "S4": ["dummy-lora-13b-rank-128"],
+        "S4_old": ["dummy-lora-13b-rank-64",
                "dummy-lora-13b-rank-32", "dummy-lora-13b-rank-16",],
         "Real": ["tloen/alpaca-lora-7b", "MBZUAI/bactrian-x-llama-7b-lora"],
 }
@@ -203,6 +205,15 @@ paper_suite = {
         duration = [60 * 2],
         input_range = [[8, 512]],
         output_range = [[8, 512]],
+    ),
+    "a100-80-xin": BenchmarkConfig(
+        num_adapters = [100],
+        alpha = [1],
+        req_rate = [2],
+        cv = [1],
+        duration = [60 * 2],
+        input_range = [[128, 384]],
+        output_range = [[100, 300]],
     ),
     "a100-80-num-adapter-s12-peft": BenchmarkConfig(
         num_adapters = [5, 100],
