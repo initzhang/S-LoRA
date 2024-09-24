@@ -167,25 +167,25 @@ def get_res_stats(per_req_latency, benchmark_time, backend, warmup_time=0, warmu
 
     # compute the latency statistics.
     avg_latency = np.mean([latency for _, _, latency, _ in per_req_latency])
-    print(f"Average latency: {avg_latency:.2f} s")
+    print(f"Average latency: {avg_latency:.4f} s")
     avg_per_token_latency = np.mean([
         latency / (prompt_len + output_len)
         for prompt_len, output_len, latency, _ in per_req_latency
     ])
-    print(f"Average latency per token: {avg_per_token_latency:.2f} s")
+    print(f"Average latency per token: {avg_per_token_latency:.4f} s")
     avg_per_output_token_latency = np.mean([
         latency / output_len
         for _, output_len, latency, _ in per_req_latency
     ])
     print("Average latency per output token: "
-          f"{avg_per_output_token_latency:.2f} s")
+          f"{avg_per_output_token_latency:.4f} s")
 
     # compute the first token latency
     first_token_latency = [latency for _, _, _, latency in per_req_latency]
     avg_first_token_latency = np.mean(first_token_latency)
-    print(f"Average first token latency: {avg_first_token_latency:.2f} s")
-    print(f"90 percentile first token latency: < {np.percentile(first_token_latency, 90):.2f} s")
-    print(f"50 percentile first token latency: < {np.percentile(first_token_latency, 50):.2f} s")
+    print(f"Average first token latency: {avg_first_token_latency:.4f} s")
+    print(f"90 percentile first token latency: < {np.percentile(first_token_latency, 90):.4f} s")
+    print(f"50 percentile first token latency: < {np.percentile(first_token_latency, 50):.4f} s")
     abort_satisfaction = [0]*num_abort
     satisfaction = [reward(latency) for _, _, _, latency in per_req_latency] + abort_satisfaction
     avg_satisfaction = np.mean(satisfaction)

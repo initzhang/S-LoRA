@@ -206,6 +206,15 @@ paper_suite = {
         input_range = [[8, 512]],
         output_range = [[8, 512]],
     ),
+    "a100-80-simple": BenchmarkConfig(
+        num_adapters = [10],
+        alpha = [1],
+        req_rate = [0.5],
+        cv = [1],
+        duration = [60 * 2],
+        input_range = [[200, 290]],
+        output_range = [[200, 260]],
+    ),
     "a100-80-xin": BenchmarkConfig(
         num_adapters = [100],
         alpha = [1],
