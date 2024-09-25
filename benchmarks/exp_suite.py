@@ -207,9 +207,9 @@ paper_suite = {
         output_range = [[8, 512]],
     ),
     "a100-80-simple": BenchmarkConfig(
-        num_adapters = [10],
+        num_adapters = [1],
         alpha = [1],
-        req_rate = [0.5],
+        req_rate = [1],
         cv = [1],
         duration = [60 * 2],
         input_range = [[200, 290]],

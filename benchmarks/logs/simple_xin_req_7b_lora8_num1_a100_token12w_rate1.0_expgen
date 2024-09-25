@@ -1,0 +1,137 @@
+suites:   0%|          | 0/1 [00:00<?, ?it/s][('num_adapters', 1), ('alpha', 1), ('req_rate', 1), ('cv', 1), ('duration', 120), ('input_range', [200, 290]), ('output_range', [200, 260])]
+avg_len: 474.71666666666664 avg_prompt_len: 243.475 avg_output_len: 231.24166666666667
+req_id 0 prompt_len 288 output_len 203 request_latency 5.27 s, first_token_latency 0.66 s
+req_id 2 prompt_len 200 output_len 213 request_latency 5.00 s, first_token_latency 0.33 s
+req_id 1 prompt_len 261 output_len 232 request_latency 6.05 s, first_token_latency 0.91 s
+req_id 3 prompt_len 226 output_len 220 request_latency 4.80 s, first_token_latency 0.07 s
+req_id 5 prompt_len 276 output_len 219 request_latency 4.72 s, first_token_latency 0.08 s
+req_id 4 prompt_len 261 output_len 247 request_latency 5.35 s, first_token_latency 0.07 s
+req_id 6 prompt_len 202 output_len 255 request_latency 5.50 s, first_token_latency 0.16 s
+req_id 7 prompt_len 269 output_len 207 request_latency 4.47 s, first_token_latency 0.09 s
+req_id 8 prompt_len 271 output_len 206 request_latency 4.51 s, first_token_latency 0.08 s
+req_id 9 prompt_len 226 output_len 202 request_latency 4.48 s, first_token_latency 0.06 s
+req_id 10 prompt_len 208 output_len 216 request_latency 4.75 s, first_token_latency 0.08 s
+req_id 11 prompt_len 261 output_len 232 request_latency 5.25 s, first_token_latency 0.28 s
+req_id 13 prompt_len 250 output_len 211 request_latency 4.53 s, first_token_latency 0.07 s
+req_id 12 prompt_len 236 output_len 247 request_latency 5.40 s, first_token_latency 0.16 s
+req_id 14 prompt_len 243 output_len 258 request_latency 5.45 s, first_token_latency 0.06 s
+req_id 16 prompt_len 278 output_len 221 request_latency 4.67 s, first_token_latency 0.07 s
+req_id 15 prompt_len 223 output_len 250 request_latency 5.32 s, first_token_latency 0.08 s
+req_id 18 prompt_len 231 output_len 221 request_latency 4.82 s, first_token_latency 0.06 s
+req_id 17 prompt_len 258 output_len 254 request_latency 5.51 s, first_token_latency 0.05 s
+req_id 20 prompt_len 251 output_len 229 request_latency 4.97 s, first_token_latency 0.11 s
+req_id 19 prompt_len 287 output_len 245 request_latency 5.30 s, first_token_latency 0.08 s
+req_id 21 prompt_len 261 output_len 237 request_latency 5.10 s, first_token_latency 0.07 s
+req_id 22 prompt_len 257 output_len 237 request_latency 5.05 s, first_token_latency 0.06 s
+req_id 23 prompt_len 251 output_len 244 request_latency 5.32 s, first_token_latency 0.16 s
+req_id 24 prompt_len 211 output_len 250 request_latency 5.55 s, first_token_latency 0.25 s
+req_id 25 prompt_len 238 output_len 253 request_latency 5.63 s, first_token_latency 0.09 s
+req_id 26 prompt_len 201 output_len 207 request_latency 4.61 s, first_token_latency 0.05 s
+req_id 27 prompt_len 202 output_len 226 request_latency 5.24 s, first_token_latency 0.24 s
+req_id 28 prompt_len 255 output_len 226 request_latency 5.03 s, first_token_latency 0.06 s
+req_id 29 prompt_len 280 output_len 233 request_latency 5.15 s, first_token_latency 0.07 s
+req_id 30 prompt_len 258 output_len 220 request_latency 4.85 s, first_token_latency 0.07 s
+req_id 31 prompt_len 201 output_len 229 request_latency 5.04 s, first_token_latency 0.06 s
+req_id 32 prompt_len 201 output_len 232 request_latency 5.14 s, first_token_latency 0.10 s
+req_id 33 prompt_len 253 output_len 227 request_latency 5.16 s, first_token_latency 0.25 s
+req_id 34 prompt_len 286 output_len 246 request_latency 5.42 s, first_token_latency 0.07 s
+req_id 36 prompt_len 218 output_len 204 request_latency 4.65 s, first_token_latency 0.25 s
+req_id 35 prompt_len 200 output_len 232 request_latency 5.08 s, first_token_latency 0.07 s
+req_id 40 prompt_len 289 output_len 203 request_latency 4.49 s, first_token_latency 0.22 s
+req_id 39 prompt_len 243 output_len 218 request_latency 4.69 s, first_token_latency 0.07 s
+req_id 37 prompt_len 201 output_len 259 request_latency 5.59 s, first_token_latency 0.06 s
+req_id 38 prompt_len 252 output_len 247 request_latency 5.35 s, first_token_latency 0.07 s
+req_id 41 prompt_len 231 output_len 234 request_latency 5.16 s, first_token_latency 0.26 s
+req_id 42 prompt_len 269 output_len 248 request_latency 5.37 s, first_token_latency 0.08 s
+req_id 43 prompt_len 231 output_len 216 request_latency 4.70 s, first_token_latency 0.06 s
+req_id 44 prompt_len 267 output_len 243 request_latency 5.43 s, first_token_latency 0.08 s
+req_id 45 prompt_len 254 output_len 227 request_latency 5.08 s, first_token_latency 0.07 s
+req_id 46 prompt_len 274 output_len 229 request_latency 5.11 s, first_token_latency 0.08 s
+req_id 47 prompt_len 255 output_len 228 request_latency 5.07 s, first_token_latency 0.07 s
+req_id 50 prompt_len 223 output_len 205 request_latency 4.58 s, first_token_latency 0.14 s
+req_id 48 prompt_len 216 output_len 245 request_latency 5.58 s, first_token_latency 0.25 s
+req_id 49 prompt_len 237 output_len 252 request_latency 5.61 s, first_token_latency 0.07 s
+req_id 51 prompt_len 268 output_len 234 request_latency 5.35 s, first_token_latency 0.25 s
+req_id 55 prompt_len 215 output_len 223 request_latency 4.83 s, first_token_latency 0.08 s
+req_id 54 prompt_len 210 output_len 236 request_latency 5.20 s, first_token_latency 0.14 s
+req_id 53 prompt_len 285 output_len 240 request_latency 5.38 s, first_token_latency 0.24 s
+req_id 52 prompt_len 269 output_len 259 request_latency 5.66 s, first_token_latency 0.08 s
+req_id 56 prompt_len 272 output_len 228 request_latency 4.97 s, first_token_latency 0.07 s
+req_id 58 prompt_len 269 output_len 245 request_latency 5.35 s, first_token_latency 0.12 s
+req_id 57 prompt_len 258 output_len 248 request_latency 5.43 s, first_token_latency 0.14 s
+req_id 59 prompt_len 279 output_len 252 request_latency 5.43 s, first_token_latency 0.07 s
+req_id 60 prompt_len 202 output_len 230 request_latency 4.94 s, first_token_latency 0.06 s
+req_id 61 prompt_len 219 output_len 234 request_latency 5.02 s, first_token_latency 0.07 s
+req_id 62 prompt_len 258 output_len 259 request_latency 5.50 s, first_token_latency 0.08 s
+req_id 63 prompt_len 235 output_len 232 request_latency 4.88 s, first_token_latency 0.06 s
+req_id 64 prompt_len 218 output_len 251 request_latency 5.46 s, first_token_latency 0.26 s
+req_id 65 prompt_len 289 output_len 220 request_latency 4.65 s, first_token_latency 0.07 s
+req_id 66 prompt_len 266 output_len 231 request_latency 4.97 s, first_token_latency 0.08 s
+req_id 67 prompt_len 218 output_len 222 request_latency 4.73 s, first_token_latency 0.06 s
+req_id 68 prompt_len 219 output_len 232 request_latency 5.13 s, first_token_latency 0.28 s
+req_id 69 prompt_len 270 output_len 202 request_latency 4.35 s, first_token_latency 0.08 s
+req_id 70 prompt_len 251 output_len 217 request_latency 4.62 s, first_token_latency 0.07 s
+req_id 71 prompt_len 232 output_len 224 request_latency 4.71 s, first_token_latency 0.06 s
+req_id 72 prompt_len 239 output_len 241 request_latency 5.08 s, first_token_latency 0.07 s
+req_id 73 prompt_len 238 output_len 230 request_latency 4.82 s, first_token_latency 0.07 s
+req_id 74 prompt_len 281 output_len 253 request_latency 5.27 s, first_token_latency 0.09 s
+req_id 75 prompt_len 200 output_len 257 request_latency 5.45 s, first_token_latency 0.07 s
+req_id 76 prompt_len 210 output_len 202 request_latency 4.33 s, first_token_latency 0.07 s
+req_id 77 prompt_len 256 output_len 239 request_latency 5.14 s, first_token_latency 0.08 s
+req_id 78 prompt_len 288 output_len 245 request_latency 5.23 s, first_token_latency 0.07 s
+req_id 79 prompt_len 249 output_len 223 request_latency 4.77 s, first_token_latency 0.06 s
+req_id 81 prompt_len 230 output_len 231 request_latency 5.00 s, first_token_latency 0.16 s
+req_id 80 prompt_len 222 output_len 249 request_latency 5.31 s, first_token_latency 0.06 s
+req_id 82 prompt_len 241 output_len 246 request_latency 5.22 s, first_token_latency 0.07 s
+req_id 83 prompt_len 206 output_len 221 request_latency 4.79 s, first_token_latency 0.06 s
+req_id 84 prompt_len 215 output_len 222 request_latency 4.88 s, first_token_latency 0.08 s
+req_id 85 prompt_len 289 output_len 201 request_latency 4.48 s, first_token_latency 0.06 s
+req_id 88 prompt_len 200 output_len 201 request_latency 4.49 s, first_token_latency 0.08 s
+req_id 86 prompt_len 259 output_len 226 request_latency 5.06 s, first_token_latency 0.07 s
+req_id 87 prompt_len 201 output_len 241 request_latency 5.39 s, first_token_latency 0.07 s
+req_id 89 prompt_len 247 output_len 225 request_latency 5.00 s, first_token_latency 0.08 s
+req_id 90 prompt_len 211 output_len 216 request_latency 4.81 s, first_token_latency 0.07 s
+req_id 91 prompt_len 268 output_len 239 request_latency 5.49 s, first_token_latency 0.28 s
+req_id 93 prompt_len 231 output_len 208 request_latency 4.61 s, first_token_latency 0.08 s
+req_id 92 prompt_len 236 output_len 232 request_latency 5.15 s, first_token_latency 0.08 s
+req_id 94 prompt_len 208 output_len 242 request_latency 5.33 s, first_token_latency 0.07 s
+req_id 95 prompt_len 218 output_len 253 request_latency 5.53 s, first_token_latency 0.08 s
+req_id 96 prompt_len 247 output_len 247 request_latency 5.35 s, first_token_latency 0.07 s
+req_id 97 prompt_len 279 output_len 238 request_latency 5.12 s, first_token_latency 0.07 s
+req_id 98 prompt_len 202 output_len 228 request_latency 4.88 s, first_token_latency 0.08 s
+req_id 99 prompt_len 219 output_len 241 request_latency 5.18 s, first_token_latency 0.05 s
+req_id 101 prompt_len 253 output_len 225 request_latency 4.79 s, first_token_latency 0.07 s
+req_id 100 prompt_len 223 output_len 254 request_latency 5.42 s, first_token_latency 0.07 s
+req_id 102 prompt_len 232 output_len 234 request_latency 4.98 s, first_token_latency 0.07 s
+req_id 104 prompt_len 274 output_len 224 request_latency 4.71 s, first_token_latency 0.07 s
+req_id 103 prompt_len 223 output_len 249 request_latency 5.49 s, first_token_latency 0.26 s
+req_id 105 prompt_len 271 output_len 223 request_latency 4.84 s, first_token_latency 0.08 s
+req_id 106 prompt_len 235 output_len 212 request_latency 4.62 s, first_token_latency 0.08 s
+req_id 107 prompt_len 237 output_len 259 request_latency 5.59 s, first_token_latency 0.07 s
+req_id 109 prompt_len 288 output_len 206 request_latency 4.45 s, first_token_latency 0.08 s
+req_id 108 prompt_len 283 output_len 257 request_latency 5.51 s, first_token_latency 0.07 s
+req_id 111 prompt_len 217 output_len 235 request_latency 5.18 s, first_token_latency 0.18 s
+req_id 110 prompt_len 224 output_len 256 request_latency 5.55 s, first_token_latency 0.07 s
+req_id 112 prompt_len 281 output_len 244 request_latency 5.33 s, first_token_latency 0.13 s
+req_id 113 prompt_len 265 output_len 219 request_latency 4.71 s, first_token_latency 0.07 s
+req_id 114 prompt_len 253 output_len 200 request_latency 4.32 s, first_token_latency 0.06 s
+req_id 115 prompt_len 234 output_len 207 request_latency 4.44 s, first_token_latency 0.07 s
+req_id 116 prompt_len 279 output_len 245 request_latency 5.17 s, first_token_latency 0.07 s
+req_id 117 prompt_len 260 output_len 215 request_latency 4.53 s, first_token_latency 0.08 s
+req_id 118 prompt_len 240 output_len 213 request_latency 4.44 s, first_token_latency 0.07 s
+req_id 119 prompt_len 232 output_len 211 request_latency 4.37 s, first_token_latency 0.08 s
+Total time: 119.75 s
+Aborted Request: 0
+Throughput: 1.00 requests/s
+Throughput strip: 1.00 requests/s
+Average latency: 5.0509 s
+Average latency per token: 0.0107 s
+Average latency per output token: 0.0219 s
+Average first token latency: 0.1139 s
+90 percentile first token latency: < 0.2540 s
+50 percentile first token latency: < 0.0749 s
+Average satisfaction: 1.00
+90 percentile satisfaction: > 1.00
+50 percentile satisfaction: > 1.00
+Average attainment: 1.00
+suites: 100%|██████████| 1/1 [01:59<00:00, 119.75s/it]suites: 100%|██████████| 1/1 [01:59<00:00, 119.75s/it]

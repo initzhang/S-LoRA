@@ -49,10 +49,10 @@ def generate_requests(num_adapters, alpha, req_rate, cv, duration,
     # generate timestamp
     requests = []
     tic = 0
-    shape = 1 / (cv * cv)
-    scale = cv * cv / req_rate
-    # intervals = np.random.exponential(1.0 / req_rate, tot_req)
-    intervals = np.random.gamma(shape, scale, tot_req)
+    intervals = np.random.exponential(1.0 / req_rate, tot_req)
+    #shape = 1 / (cv * cv)
+    #scale = cv * cv / req_rate
+    #intervals = np.random.gamma(shape, scale, tot_req)
     for i in range(tot_req):
         tic += intervals[i]
         requests.append(Request(i, adapter_dirs[ind[i]][0], adapter_dirs[ind[i]][1],
@@ -61,6 +61,7 @@ def generate_requests(num_adapters, alpha, req_rate, cv, duration,
     return requests
 
 def get_real_requests(trace_file, req_rate, duration, base_model, adapter_dirs, input_range, output_range, seed=42):
+    raise ValueError
     np.random.seed(seed)
     tokenizer = AutoTokenizer.from_pretrained(base_model)
     conversations = downsample(trace_file, req_rate, duration, tokenizer, input_range, output_range)
